@@ -177,6 +177,14 @@ section {
     object-fit: cover;
 }
 
+a.default{
+    color: $primary;
+    font-size: 1.6rem;
+    display: inline-flex;
+    gap: 1.2rem;
+    @include body_semi_bold();
+}
+
 .mt-40 {
     margin-top:4rem;
 }
@@ -497,7 +505,7 @@ section {
     }
 
     .card_body{
-        .date{
+        .small{
             padding-block: 0.8rem;
             display: inline-block;
             color: $text-light;
@@ -511,8 +519,86 @@ section {
     }
 }
 
+
+
 .article_posts{
-    padding-block: 3.2rem 10.6rem;
+    padding-block: 3.2rem 8rem;
+
+    .news_artical_card {
+        margin-bottom:0;
+    }
+}
+.valuable_info {
+    padding-block: 8rem;
+
+    .resources_card { 
+        figure {
+            height: auto; 
+        }
+        .post_title{
+            font-weight: 600;
+        }
+    }
+
+    .resource_details {
+        background-color: #F5F5F5;
+        border-radius: 1.2rem;
+        padding: 2.4rem;
+        margin-bottom: 2.4rem;
+       
+         h4 {
+            @include header-semibold();
+        }
+        
+        .text_logo {
+            @include body_semi_bold();
+            display: flex;
+            margin-bottom: 1.6rem;
+            line-height: 1.5;
+            align-items: baseline;
+            gap: 0.8rem;
+        }
+
+        i{
+            color: $primary;
+            font-size: 2rem;
+        }
+    }
+    .resource_img {
+        height: 100%;
+        position: relative;
+
+        .overlay_date {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #fff;
+            padding: 0.4rem 0.8rem;
+
+            span {
+                display: block;
+                text-align: center;
+
+                &:first-child {
+                    font-weight: 700;
+                    font-size: 1.4rem;
+                    color: $text-light;
+                }
+
+                &:last-child {
+                    color: $primary;
+                    @include header-semibold();
+                    font-size: 2.4rem;
+                }
+            }
+        }
+    }
+}
+
+.grid_post{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
 }
 // about us page css
 .bg-img {
@@ -1149,6 +1235,52 @@ section {
     margin-top: -1.2rem;
 }
 
+.news_artical_card {
+
+    margin-bottom:5rem;
+
+
+
+    figure a {
+         height: 24.6rem;
+        display:block;
+        }
+
+    img {
+
+          height: 100%;
+          object-fit: cover;
+    }
+
+    h6 {
+        font-size: 1.4rem;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          margin: 1.6rem 0 .8rem;
+          background: $primary;
+          color: #fff;
+          padding: .2rem .8rem;
+          border-radius: 4px;
+          display: inline-block;
+          font-weight: 400;
+    }
+
+    h5 a {
+      font-size: 2.4rem;
+      font-weight: 500;
+      line-height: 1.1;
+        color:$body_text;
+          @include transition();
+
+        &:hover {
+            color :$primary;
+        }
+    }
+
+    .mt-56 {
+        margin-top: 0;
+    }
+}
 
 .all_articles {
 
@@ -1173,52 +1305,7 @@ section {
     .filter-show {
         padding: 5rem 0 8rem;
 
-        .category-card {
-
-            margin-bottom:5rem;
-
-            
-
-            figure a {
-                 height: 24.6rem;
-                display:block;
-                }
-
-            img {
-               
-                  height: 100%;
-                  object-fit: cover;
-            }
-
-            h6 {
-                font-size: 1.4rem;
-                  text-transform: uppercase;
-                  letter-spacing: 3px;
-                  margin: 1.6rem 0 .8rem;
-                  background: $primary;
-                  color: #fff;
-                  padding: .2rem .8rem;
-                  border-radius: 4px;
-                  display: inline-block;
-                  font-weight: 400;
-            }
-
-            h5 a {
-              font-size: 2.4rem;
-              font-weight: 500;
-              line-height: 1.1;
-                color:$body_text;
-                  @include transition();
-
-                &:hover {
-                    color :$primary;
-                }
-            }
-
-            .mt-56 {
-                margin-top: 0;
-            }
-        }
+     
 
         // .btwob_section {
         //     padding: 4rem 0;
@@ -1320,7 +1407,7 @@ section {
       margin: 2.5rem 0;
     }
 
-    .all_articles .filter-show .category-card h5 a {
+    .news_artical_card h5 a {
       font-size: 1.9rem;
     }
 
@@ -1333,7 +1420,7 @@ section {
             font-size: 16px;
         }
     }
-    .all_articles .filter-show .category-card figure a {
+.news_artical_card figure a {
       height: 18.6rem;
       display: block;
     }
@@ -1390,7 +1477,7 @@ section {
       .filter-show {
         padding: 3.2rem 0 3rem;
 
-        .category-card {
+        .news_artical_card {
           margin-bottom: 2.4rem;
 
             figure a {
@@ -1425,7 +1512,7 @@ section {
 }
 
 .article_banner {
-      padding: 8rem ;
+      padding: 8rem 0 ;
 
     p{
         @include body_medium ;
@@ -1454,9 +1541,9 @@ section {
         }
 
         .copy-message {
-            font-size: 16px;
+            font-size: 13px;
             position: absolute;
-            bottom: 30px; 
+            bottom: 20px; 
             left: 50%;
             transform: translateX(-50%);
             white-space: nowrap;
@@ -1606,10 +1693,61 @@ section {
   font-size: 1.4rem;
   padding: 1.5px 8px !important;
   line-height: 1.2;
+     width:auto;
 }
     p {
         color: $body-light-text;
           @include body_bold();
           font-size: 1.6rem;
     }
+}
+
+
+@media (max-width : 1280px) {
+    .article_banner .main-detail-img img {
+      max-height: 50.5rem;
     }
+}
+
+
+@media (max-width: 767px) {
+    .article_banner {
+      padding: 4rem 0;
+
+        .h3 {
+            font-size:3.5rem;
+            margin-bottom:2.4rem;
+        }
+        .main-detail-img img {
+            max-height: 19.3rem;
+          }
+
+        .details-sideimg img {
+          height: 34.4rem;
+        }
+
+        p {
+            margin-bottom:2.4rem;
+        }
+        .Video-box figure img {
+          max-height: 100%;
+          height: 19.3rem;
+        }
+
+        .swiper-slide img {
+          height: 19.3rem;
+        }
+    }
+
+    .whats_new {
+      padding-block: 4rem 2.4rem;
+
+        h3 {
+        margin-bottom:1.6rem !important;
+            font-size:3.5rem;
+        }
+    }
+    .article_posts {
+      padding-block: 3.2rem 4rem;
+    }
+}
