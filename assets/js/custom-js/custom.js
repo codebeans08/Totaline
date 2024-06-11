@@ -39,3 +39,46 @@ $(document).ready(function () {
         slidesPerView: 2,
     });
 });
+
+// artical details swiper
+new Swiper(".artical-details", {
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    slidesPerView: 1,
+    spaceBetween: 20,
+});
+
+$(".copyButton").on("click", function (event) {
+    event.preventDefault();
+    const url = window.location.href;
+
+    navigator.clipboard.writeText(url).then(
+        function () {
+            // Create the message element
+            const $copyMessage = $('<div class="copy-message">Copied!</div>');
+
+            // Append the message to the button
+            $(event.target).append($copyMessage);
+
+            // Show the message
+            $copyMessage.fadeIn();
+
+            // Hide the message after 2 seconds
+            setTimeout(function () {
+                $copyMessage.fadeOut(function () {
+                    $(this).remove();
+                });
+            }, 2000);
+        },
+        function (err) {
+            console.error("Failed to copy URL: ", err);
+        },
+    );
+});
