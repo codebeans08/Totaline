@@ -964,8 +964,7 @@ section {
   font-size: 1.6rem;
   color:$body_text;
   position:relative;
-display: none;
-
+    
     &:focus {
       border-color: $primary;
       outline: 0;

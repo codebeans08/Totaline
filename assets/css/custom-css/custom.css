@@ -856,8 +856,7 @@ section {
   border-radius: 0;
   font-size: 1.6rem;
   color: #262626;
-  position: relative;
-  display: none; }
+  position: relative; }
   .form-select:focus {
     border-color: #CE000B;
     outline: 0;
