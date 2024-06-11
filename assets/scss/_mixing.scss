@@ -1,0 +1,81 @@
+// fonts
+$body-font: "Manrope", sans-serif;
+$header-font: "Instrument Sans", sans-serif;
+
+$fontawesome: "Font Awesome 6 Pro";
+
+// mixin
+// Manrope
+@mixin body_bold {
+  font-family: $body-font;
+  font-weight: 700;
+}
+
+@mixin body_semi_bold {
+  font-family: $body-font;
+  font-weight: 600;
+}
+
+@mixin body_medium {
+  font-family: $body-font;
+  font-weight: 500;
+}
+
+@mixin body_regular {
+  font-family: $body-font;
+  font-weight: 400;
+}
+
+@mixin body_light {
+  font-family: $body-font;
+  font-weight: 300;
+}
+
+// header fonts
+// Instrument Sans
+
+@mixin header-regular {
+  font-family: $header-font;
+  font-weight: 400;
+}
+
+@mixin header-medium {
+  font-family: $header-font;
+  font-weight: 500;
+}
+
+@mixin header-semibold {
+  font-family: $header-font;
+  font-weight: 600;
+}
+
+@mixin header-bold {
+  font-family: $header-font;
+  font-weight: 700;
+}
+
+@mixin transition {
+  transition: 300ms all ease-in-out;
+}
+
+@mixin btn {
+  font-size: 1.6rem;
+  line-height: 1;
+  padding: 2.5rem 2.4rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 1.2rem;
+  // @include font_semi_bold();
+  @extend .border-2;
+  border-color: $btn_color;
+  @include transition();
+  color: #fff;
+  background-color: $btn_color;
+  @extend .border-radius-12;
+
+  &:hover {
+    background-color: #fff;
+    color: $btn_color;
+    border-color: $btn_color;
+  }
+}

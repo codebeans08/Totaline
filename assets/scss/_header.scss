@@ -1,0 +1,134 @@
+@import "color", "mixing";
+
+
+header {
+    background-color: #fff;
+    border-bottom: 0.1rem solid $border_color;
+
+    .navbar,
+    .navbar-brand {
+        padding: 0;
+
+        .nav-link,
+        a {
+            // @include font_semi_bold();
+            color: $secondary;
+        }
+
+        .btn_links {
+            a {
+                font-size: 1.6rem;
+            }
+
+            i {
+                color: $primary;
+                font-size: 1.2rem;
+            }
+        }
+
+        .search_header {
+            a {
+                background-color: #000;
+                padding: 2.3rem;
+
+                i {
+                    color: #fff;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+
+        .dropdown {
+            position: unset;
+
+            // @media(min-width: 992px) {
+            //     &:hover {
+            //         .dropdown-menu {
+            //             display: block;
+            //         }
+            //     }
+            // }
+            .mega-menu-area {
+                top: calc(100% + 0.1rem);
+                border-radius: 0;
+                width: 100%;
+                left: 0;
+                position: absolute;
+                background: rgba(23, 13, 14, 0.8);
+                z-index: 999;
+                height: calc(100vh - 6.52rem);
+                display: none;
+
+                @media(min-width: 1024px) {
+                    display: block;
+                }
+
+                .menu_row {
+                    gap: 8.5rem;
+                }
+
+                .mega-menu {
+                    padding-block: 8rem;
+                    border-radius: 0;
+                    background-color: #fff;
+
+                    .dropdown-menu {
+                        position: relative;
+                        border-radius: 0;
+                        display: flex;
+                        border: none;
+                        flex-direction: column;
+                        gap: 3.7rem;
+
+                        .dropdown-item {
+                            font-size: 2.4rem;
+                            padding: 0;
+                            @include header-medium();
+
+                            &:hover {
+                                color: $primary;
+                                background-color: transparent;
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .dropdown-toggle {
+                &::after {
+                    content: '\f107';
+                    font-family: $fontawesome;
+                    width: 1.2rem;
+                    height: 0.7rem;
+                    border: none;
+                    display: inline-block;
+                    vertical-align: .2rem;
+                    margin-left: .4rem;
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+
+.navbar-toggler {
+    background-color: #000;
+    border-radius: 0;
+    display: grid;
+    place-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    width: 6.4rem;
+    height: 6.4rem;
+    margin-inline-end: -0.75rem;
+
+    span {
+        width: 2.2rem;
+        height: 0.2rem;
+        background-color: #fff;
+        border-radius: 0.5rem;
+        display: block;
+    }
+}

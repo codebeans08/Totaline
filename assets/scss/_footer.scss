@@ -1,0 +1,222 @@
+@import "color", "mixing";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    position: relative;
+
+    .top-footer {
+        background: $secondary;
+        padding: 4rem 0 6rem;
+
+        .col-6:last-child ul {
+            column-count: 2;
+            padding-right: 6rem;
+        }
+
+        h5 {
+            color: #fff;
+
+        }
+
+        span {
+            color: #fff;
+            font-size: 1.2rem;
+            @include body_bold();
+        }
+
+        .footer-logo {
+            padding-bottom: 4rem;
+            margin-bottom: 4rem;
+            border-bottom: 1px solid #393939;
+
+            img {
+                max-width: 20.7rem;
+                width: 100%;
+            }
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                padding-bottom: 2.4rem;
+
+                a {
+                    color: #fff;
+                    display: inline-block;
+                    @include transition();
+                    font-size: 1.6rem;
+                    @include body_semi_bold();
+
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+
+                .footer-hrs {
+                    p {
+                        font-size: 1.6rem;
+                        color: #fff;
+                        @include body_medium();
+                        padding: .6rem 0 0 0;
+                        line-height: 1.8;
+                        margin-bottom: 0;
+                        ;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    .bottom-footer {
+        background: $secondary;
+        padding: 0 0 2rem;
+        border-bottom: 4px solid $primary;
+
+        p {
+            color: #fff;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            @include body_semi_bold ();
+        }
+
+        a {
+            color: #fff;
+            @include transition();
+            font-size: 1.6rem;
+            @include body_semi_bold();
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1399px) {
+    footer .top-footer .col-6:last-child ul {
+        padding-right: 2rem;
+    }
+}
+
+@media (max-width: 1280px) {
+    footer .top-footer h5 {
+        font-size: 1.8rem;
+    }
+
+    footer .top-footer .footer-logo img {
+        max-width: 16.6rem;
+    }
+}
+
+
+
+@media (max-width: 992px) {
+    footer .top-footer .footer-logo img {
+        max-width: 14.6rem;
+        margin-bottom: 0rem;
+    }
+
+    footer .top-footer .col:nth-child(2) ul {
+        column-count: 2;
+    }
+
+    footer .top-footer {
+        padding: 4rem 0 4rem;
+    }
+
+
+    footer .top-footer h5 {
+        color: #fff;
+        margin-bottom: 3.2rem;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            width: 4rem;
+            height: 1px;
+            background: $primary;
+            top: 36px;
+            left: 0;
+            content: '';
+        }
+
+    }
+}
+
+
+@media (max-width: 768px) {
+    footer {
+
+        .top-footer {
+            padding: 4rem 0 3rem;
+
+            .footer-logo {
+                padding-bottom: 0;
+                border-bottom: none;
+
+
+                img {
+                    max-width: 16.46rem;
+                    margin-bottom: 0;
+                }
+            }
+
+            .footer-hrs {
+                justify-content: start !important;
+
+                p {
+                    font-size: 1.2rem !important;
+                }
+            }
+
+            ul li {
+                padding-bottom: 1.6rem;
+            }
+
+            .mobile-menu>div {
+                margin-bottom: 40px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                // &:first-child ul {
+                //     column-count: 2;
+                // }
+
+                // &:last-child ul {
+                //     column-count: 2;
+                //     margin-bottom: 0;
+                // }
+            }
+
+            .col-6:last-child ul {
+                column-count: 1 !important;
+                padding-right: 0 !important;
+            }
+
+        }
+    }
+
+    .bottom-footer .row {
+        flex-direction: column-reverse;
+
+        ul {
+            display: block;
+
+            li {
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
