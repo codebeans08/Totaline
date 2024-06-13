@@ -1,347 +1,525 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home | Totaline</title>
+        <link
+            rel="stylesheet"
+            href="./assets/css/bootstrap/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="./assets/css/custom-css/custom.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Totaline</title>
-    <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/custom-css/custom.css">
+        <!-- fonts  -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- fonts  -->
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+        <!-- Instrument Sans -->
 
-    <!-- Instrument Sans -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+            rel="stylesheet"
+        />
 
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
-        rel="stylesheet">
+        <!-- fontawesome pro  -->
+        <link
+            rel="stylesheet"
+            href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+        />
 
-    <!-- fontawesome pro  -->
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+        <!-- swiper slider  -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+    </head>
 
-    <!-- swiper slider  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <body>
+        <!-- header start  -->
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/imgs/logo.png" alt="" width="150" />
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse justify-content-center"
+                        id="navbarNav"
+                    >
+                        <div
+                            class="menu_btn gap-5 d-flex d-lg-none align-items-center py-5"
+                        >
+                            <div class="btn_links d-flex gap-2">
+                                <a href="/"
+                                    >Cart
+                                    <i class="fa-regular fa-cart-shopping"></i>
+                                </a>
+                            </div>
 
-</head>
-
-<body>
-    <!-- header start  -->
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="./assets/imgs/logo.png" alt="" width="150">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <div class="menu_btn gap-5 d-flex d-lg-none align-items-center py-5">
-                        <div class="btn_links d-flex gap-2">
-                            <a href="/">Cart <i class="fa-regular fa-cart-shopping"></i>
-                            </a>
+                            <div class="btn_links d-flex gap-2">
+                                <a href="/"
+                                    >login
+                                    <i class="fa-light fa-circle-user"></i
+                                ></a>
+                            </div>
                         </div>
+                        <ul class="navbar-nav gap-5">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#">
+                                    Products
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item " href="#"
+                                            >Action</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Another action</a
+                                        >
+                                    </li>
 
-                        <div class="btn_links d-flex gap-2">
-                            <a href="/">login <i class="fa-light fa-circle-user"></i></a>
-                        </div>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Something else here</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
 
-                    </div>
-                    <ul class="navbar-nav gap-5">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#">
-                                Products
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">About Totaline</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#">
+                                    Resources & News
+                                </a>
+                                <div class="mega-menu-area">
+                                    <div class="mega-menu">
+                                        <div class="container">
+                                            <div class="row menu_row">
+                                                <div class="col-5">
+                                                    <h3 class="h2 text_primary">
+                                                        Resources & News
+                                                    </h3>
+                                                    <p>
+                                                        Learn from our knowledge
+                                                        hub and learn about the
+                                                        latest updates on
+                                                        Totaline.
+                                                    </p>
+                                                </div>
 
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
+                                                <div class="col-auto">
+                                                    <ul class="dropdown-menu">
+                                                        <li>
+                                                            <a
+                                                                class="dropdown-item"
+                                                                href="#"
+                                                                >Action</a
+                                                            >
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                class="dropdown-item"
+                                                                href="#"
+                                                                >Another
+                                                                action</a
+                                                            >
+                                                        </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About Totaline</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#">
-                                Resources & News
-                            </a>
-                            <div class="mega-menu-area">
-                                <div class="mega-menu">
-                                    <div class="container">
-                                        <div class="row menu_row">
-                                            <div class="col-5">
-                                                <h3 class="h2 text_primary">
-                                                    Resources & News
-                                                </h3>
-                                                <p>Learn from our knowledge hub and learn about the latest updates on
-                                                    Totaline.</p>
-                                            </div>
-
-                                            <div class="col-auto">
-                                                <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-
-                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                                </ul>
+                                                        <li>
+                                                            <a
+                                                                class="dropdown-item"
+                                                                href="#"
+                                                                >Something else
+                                                                here</a
+                                                            >
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
-                            </div>
+                            </li>
 
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div class="menu_btn gap-5 d-none d-lg-flex align-items-center">
-                    <div class="btn_links d-flex gap-2">
-                        <a href="/">Cart <i class="fa-regular fa-cart-shopping"></i>
-                        </a>
-                    </div>
-
-                    <div class="btn_links d-flex gap-2">
-                        <a href="/">login <i class="fa-light fa-circle-user"></i></a>
-                    </div>
-                    <div class="btn_links d-flex gap-2 search_header">
-                        <a href="/"> <i class="fa-light fa-magnifying-glass"></i></a>
-                    </div>
-                </div>
-
-            </div>
-        </nav>
-    </header>
-
-
-    <!-- banner start  -->
-    <section class="primary_banner">
-        <img src="./assets/imgs/bg_banner_img.jpg" alt="" class="img-fluid bg-img">
-        <div class="overlay white-overlay"></div>
-        <div class="container position-relative">
-            <div class="row justify-content-center text-center gap-5 gap-lg-0">
-                <div class="col-lg-8 pe-lg-0">
-                    <h1 class="text_primary">Your trusted resource for HVAC parts</h1>
-                    <p>With our extensive catalog, we assure you can find the right part for your HVAC system.</p>
-
-                    <div class="search_form">
-                        <form action="">
-                            <div class="form-group d-flex">
-                                <input class="form-control border-0 px-0" type="text" placeholder="Search for Products">
-                                <button type="submit"><i class="fa-light fa-magnifying-glass"></i></button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="position-relative product-slider">
-            <div class="swiper" id="product_slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <figure>
-                            <img src="./assets/imgs/toshiba_ac.png" alt="" class="img-fluid">
-                        </figure>
-                    </div>
-                    <div class="swiper-slide">
-                        <figure>
-                            <img src="./assets/imgs/referignt.png" alt="" class="img-fluid">
-                        </figure>
-                    </div>
-                    <div class="swiper-slide">
-                        <figure>
-                            <img src="./assets/imgs/comprst.jpg" alt="" class="img-fluid">
-                        </figure>
-                    </div>
-                    <div class="swiper-slide">
-                        <figure>
-                            <img src="./assets/imgs/fan-motor.png" alt="" class="img-fluid">
-                        </figure>
-                    </div>
-                    <div class="swiper-slide">
-                        <figure>
-                            <img src="./assets/imgs/holders.png" alt="" class="img-fluid">
-                        </figure>
-                    </div>
-                    <div class="swiper-slide">
-                        <figure>
-                            <img src="./assets/imgs/comprst.jpg" alt="" class="img-fluid">
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="business_partner">
-        <div class="container">
-            <div class="img_row img_row1">
-                <div class="img_card">
-                    <img class="img-fluid" src="./assets/imgs/Alveo-PT-Facada-night.png" alt="">
-                    <div class="card_body">
-                        <div class="img_title">MRT 7 Project, <span>San Miguel Corp</span></div>
-                    </div>
-                </div>
-                <div class="img_card card_2">
-                    <img class="img-fluid" src="./assets/imgs/1smc-mrt7.png" alt="">
-                    <div class="card_body">
-                        <div class="img_title">MRT 7 Project, <span>San Miguel Corp</span></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-
-                <div class="col-md-6">
-                    <div class="text-center text-white">
-                        <h2 class="text-white max-w-100">Countless businesses trusted us as their partner</h2>
-                        <p>With a proven track record of excellence, we've become the go-to source for high-quality HVAC
-                            parts and components.</p>
-                        <a href="#" class="btn primary_btn">Become a Partner <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-
-            </div>
-            <div class="img_row img_row2">
-                <div class="img_card">
-                    <img class="img-fluid" src="./assets/imgs/Galleon_Thumbnail_01.jpg" alt="">
-                    <div class="card_body">
-                        <div class="img_title">MRT 7 Project, <span>San Miguel Corp</span></div>
-                    </div>
-                </div>
-                <div class="img_card card_2">
-                    <img class="img-fluid" src="./assets/imgs/unimartnewmain.jpg" alt="">
-                    <div class="card_body">
-                        <div class="img_title">MRT 7 Project, <span>San Miguel Corp</span></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="offer_product bg-tertiary">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-5">
-
-                    <div class="offer_content check_list">
-                        <h2>Avail exclusive discounts upon partnering with us</h2>
-                        <p>As a valued partner, you’ll gain access to exclusive discounts on our entire range of
-                            high-quality aftermarket HVAC parts, ensuring you get the best value for your investment.
-                        </p>
-                        <ul>
-                            <li>Receive special discounts</li>
-                            <li>Get exclusive support from our HVAC experts</li>
-                            <li>Receive early notifications for trainings and workshops</li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
                         </ul>
                     </div>
 
+                    <div
+                        class="menu_btn gap-5 d-none d-lg-flex align-items-center"
+                    >
+                        <div class="btn_links d-flex gap-2">
+                            <a href="/"
+                                >Cart
+                                <i class="fa-regular fa-cart-shopping"></i>
+                            </a>
+                        </div>
+
+                        <div class="btn_links d-flex gap-2">
+                            <a href="/"
+                                >login <i class="fa-light fa-circle-user"></i
+                            ></a>
+                        </div>
+                        <div class="btn_links d-flex gap-2 search_header">
+                            <a href="/">
+                                <i class="fa-light fa-magnifying-glass"></i
+                            ></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-7">
-                    <div class="swiper offer_product_slider" id="offer_product_slider">
-                        <div class="swiper-wrapper py-4">
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <div class="product-img">
-                                        <img src="./assets/imgs/compr.png" alt="" class="img-fluid">
+            </nav>
+        </header>
+        <!-- header end  -->    
+        
+<!-- banner start  -->
+<section class="primary_banner">
+    <img
+        src="./assets/imgs/bg_banner_img.jpg"
+        alt=""
+        class="img-fluid bg-img"
+    />
+    <div class="overlay white-overlay"></div>
+    <div class="container position-relative">
+        <div class="row justify-content-center text-center gap-5 gap-lg-0">
+            <div class="col-lg-8 pe-lg-0">
+                <h1 class="text_primary">
+                    Your trusted resource for HVAC parts
+                </h1>
+                <p>
+                    With our extensive catalog, we assure you can find the right
+                    part for your HVAC system.
+                </p>
 
-                                        <div class="in-offer badge">
-                                            Our Offer
+                <div class="search_form">
+                    <form action="">
+                        <div class="form-group d-flex">
+                            <input
+                                class="form-control border-0 px-0"
+                                type="text"
+                                placeholder="Search for Products"
+                            />
+                            <button type="submit">
+                                <i class="fa-light fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="position-relative product-slider">
+        <div class="swiper" id="product_slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <figure>
+                        <img
+                            src="./assets/imgs/toshiba_ac.png"
+                            alt=""
+                            class="img-fluid"
+                        />
+                    </figure>
+                </div>
+                <div class="swiper-slide">
+                    <figure>
+                        <img
+                            src="./assets/imgs/referignt.png"
+                            alt=""
+                            class="img-fluid"
+                        />
+                    </figure>
+                </div>
+                <div class="swiper-slide">
+                    <figure>
+                        <img
+                            src="./assets/imgs/comprst.jpg"
+                            alt=""
+                            class="img-fluid"
+                        />
+                    </figure>
+                </div>
+                <div class="swiper-slide">
+                    <figure>
+                        <img
+                            src="./assets/imgs/fan-motor.png"
+                            alt=""
+                            class="img-fluid"
+                        />
+                    </figure>
+                </div>
+                <div class="swiper-slide">
+                    <figure>
+                        <img
+                            src="./assets/imgs/holders.png"
+                            alt=""
+                            class="img-fluid"
+                        />
+                    </figure>
+                </div>
+                <div class="swiper-slide">
+                    <figure>
+                        <img
+                            src="./assets/imgs/comprst.jpg"
+                            alt=""
+                            class="img-fluid"
+                        />
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="business_partner">
+    <div class="container">
+        <div class="img_row img_row1">
+            <div class="img_card">
+                <img
+                    class="img-fluid"
+                    src="./assets/imgs/Alveo-PT-Facada-night.png"
+                    alt=""
+                />
+                <div class="card_body">
+                    <div class="img_title">
+                        MRT 7 Project, <span>San Miguel Corp</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img_card card_2">
+                <img
+                    class="img-fluid"
+                    src="./assets/imgs/1smc-mrt7.png"
+                    alt=""
+                />
+                <div class="card_body">
+                    <div class="img_title">
+                        MRT 7 Project, <span>San Miguel Corp</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mb-5 mb-md-0">
+            <div class="col-md-6">
+                <div class="text-center text-white">
+                    <h2 class="text-white max-w-100">
+                        Countless businesses trusted us as their partner
+                    </h2>
+                    <p>
+                        With a proven track record of excellence, we've become
+                        the go-to source for high-quality HVAC parts and
+                        components.
+                    </p>
+                    <a href="#" class="btn primary_btn"
+                        >Become a Partner <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                </div>
+            </div>
+        </div>
+        <div class="img_row img_row2">
+            <div class="img_card">
+                <img
+                    class="img-fluid"
+                    src="./assets/imgs/Galleon_Thumbnail_01.jpg"
+                    alt=""
+                />
+                <div class="card_body">
+                    <div class="img_title">
+                        MRT 7 Project, <span>San Miguel Corp</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img_card card_2">
+                <img
+                    class="img-fluid"
+                    src="./assets/imgs/unimartnewmain.jpg"
+                    alt=""
+                />
+                <div class="card_body">
+                    <div class="img_title">
+                        MRT 7 Project, <span>San Miguel Corp</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="offer_product bg-tertiary">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-5">
+                <div class="offer_content check_list">
+                    <h2>Avail exclusive discounts upon partnering with us</h2>
+                    <p>
+                        As a valued partner, you’ll gain access to exclusive
+                        discounts on our entire range of high-quality
+                        aftermarket HVAC parts, ensuring you get the best value
+                        for your investment.
+                    </p>
+                    <ul>
+                        <li>Receive special discounts</li>
+                        <li>Get exclusive support from our HVAC experts</li>
+                        <li>
+                            Receive early notifications for trainings and
+                            workshops
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div
+                    class="swiper offer_product_slider"
+                    id="offer_product_slider"
+                >
+                    <div class="swiper-wrapper py-4">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="product-img">
+                                    <img
+                                        src="./assets/imgs/compr.png"
+                                        alt=""
+                                        class="img-fluid"
+                                    />
+
+                                    <div class="in-offer badge">Our Offer</div>
+
+                                    <div class="card-body">
+                                        <div class="stock-details">
+                                            <span class="in-stock stock-status"
+                                                >in stock</span
+                                            >
+                                            <span
+                                                class="out-of-stock stock-status"
+                                                >out of stock</span
+                                            >
                                         </div>
 
-
-                                        <div class="card-body">
-                                            <div class="stock-details">
-                                                <Span class="in-stock stock-status">in stock</Span>
-                                                <Span class=" out-of-stock stock-status">out of stock</Span>
-                                            </div>
-
-                                            <div class="product-title h5">
-                                                Compr: ZR94KC-TF5-522
-                                            </div>
-                                            <div class="sku">
-                                                <span class="d-block">sku</span>
-                                                <span>4000001637</span>
-                                            </div>
-                                            <div class="price ">
-                                                <span class="curent-price d-inline-block"> ₱12,812.40</span>
-                                                <span class="regular-price"> ₱12,812.40</span>
-                                            </div>
+                                        <div class="product-title h5">
+                                            Compr: ZR94KC-TF5-522
                                         </div>
-
+                                        <div class="sku">
+                                            <span class="d-block">sku</span>
+                                            <span>4000001637</span>
+                                        </div>
+                                        <div class="price">
+                                            <span
+                                                class="curent-price d-inline-block"
+                                            >
+                                                ₱12,812.40</span
+                                            >
+                                            <span class="regular-price">
+                                                ₱12,812.40</span
+                                            >
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <div class="product-img">
-                                        <img src="./assets/imgs/compr.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="product-img">
+                                    <img
+                                        src="./assets/imgs/compr.png"
+                                        alt=""
+                                        class="img-fluid"
+                                    />
 
-                                        <div class=" badge">
-                                            SRP
-                                        </div>
+                                    <div class="badge">SRP</div>
 
-                                        <div class="card-body">
-                                            <div class="stock-details">
-                                                <Span class="in-stock stock-status">in stock</Span>
-                                                <Span class=" out-of-stock stock-status">out of stock</Span>
-                                                <div>
-
-                                                    <div class="product-title h5">
-                                                        Compr: ZR94KC-TF5-522
-                                                    </div>
-                                                    <div class="sku">
-                                                        <span class="d-block">sku</span>
-                                                        <span>4000001637</span>
-                                                    </div>
-                                                    <div class="price">
-                                                        <span class="curent-price "> ₱12,812.40</span>
-                                                        <span class="regular-price d-inline-block"> ₱14,354.00</span>
-                                                    </div>
+                                    <div class="card-body">
+                                        <div class="stock-details">
+                                            <span class="in-stock stock-status"
+                                                >in stock</span
+                                            >
+                                            <span
+                                                class="out-of-stock stock-status"
+                                                >out of stock</span
+                                            >
+                                            <div>
+                                                <div class="product-title h5">
+                                                    Compr: ZR94KC-TF5-522
                                                 </div>
-
+                                                <div class="sku">
+                                                    <span class="d-block"
+                                                        >sku</span
+                                                    >
+                                                    <span>4000001637</span>
+                                                </div>
+                                                <div class="price">
+                                                    <span class="curent-price">
+                                                        ₱12,812.40</span
+                                                    >
+                                                    <span
+                                                        class="regular-price d-inline-block"
+                                                    >
+                                                        ₱14,354.00</span
+                                                    >
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
-
                             </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <div class="product-img">
-                                        <img src="./assets/imgs/compr.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="product-img">
+                                    <img
+                                        src="./assets/imgs/compr.png"
+                                        alt=""
+                                        class="img-fluid"
+                                    />
 
-                                        <div class=" badge">
-                                            SRP
-                                        </div>
+                                    <div class="badge">SRP</div>
 
-                                        <div class="card-body">
-                                            <div class="stock-details">
-                                                <Span class="in-stock stock-status">in stock</Span>
-                                                <Span class=" out-of-stock stock-status">out of stock</Span>
-                                                <div>
-
-                                                    <div class="product-title h5">
-                                                        Compr: ZR94KC-TF5-522
-                                                    </div>
-                                                    <div class="sku">
-                                                        <span class="d-block">sku</span>
-                                                        <span>4000001637</span>
-                                                    </div>
-                                                    <div class="price">
-                                                        <span class="curent-price "> ₱12,812.40</span>
-                                                        <span class="regular-price d-inline-block"> ₱12,812.40</span>
-                                                    </div>
+                                    <div class="card-body">
+                                        <div class="stock-details">
+                                            <span class="in-stock stock-status"
+                                                >in stock</span
+                                            >
+                                            <span
+                                                class="out-of-stock stock-status"
+                                                >out of stock</span
+                                            >
+                                            <div>
+                                                <div class="product-title h5">
+                                                    Compr: ZR94KC-TF5-522
+                                                </div>
+                                                <div class="sku">
+                                                    <span class="d-block"
+                                                        >sku</span
+                                                    >
+                                                    <span>4000001637</span>
+                                                </div>
+                                                <div class="price">
+                                                    <span class="curent-price">
+                                                        ₱12,812.40</span
+                                                    >
+                                                    <span
+                                                        class="regular-price d-inline-block"
+                                                    >
+                                                        ₱12,812.40</span
+                                                    >
                                                 </div>
                                             </div>
                                         </div>
@@ -353,306 +531,406 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="getting_parts bg-tertiary">
-        <div class="container parts_container">
-            <div class="row">
-                <div class="col-6 parts_col">
-                    <div class="parts_content">
-                        <h2>Get the parts you need conveniently</h2>
-                        <div class="parts_list">
-                            <div class="about_parts">
-                                <div class="img">
-                                    <img src="./assets/imgs/Air-conditioning.svg" width="32" alt="">
-                                </div>
-                                <div class="text-content">
-                                    <h6>Select the parts you need with our extensive range of options</h6>
-                                    <p>Choose the perfect parts from our extensive, high-quality range for any HVAC
-                                        system.</p>
-                                </div>
+    </div>
+</section>
+<section class="getting_parts bg-tertiary">
+    <div class="container parts_container">
+        <div class="row">
+            <div class="col-lg-6 parts_col">
+                <div class="parts_content">
+                    <h2>Get the parts you need conveniently</h2>
+                    <div class="parts_list">
+                        <div class="about_parts">
+                            <div class="img">
+                                <img
+                                    src="./assets/imgs/Air-conditioning.svg"
+                                    width="32"
+                                    alt=""
+                                />
                             </div>
-                            <div class="about_parts">
-                                <div class="img">
-                                    <img src="./assets/imgs/Truck.svg" width="32" alt="">
-                                </div>
-                                <div class="text-content">
-                                    <h6>Have it delivered to your location hassle-free</h6>
-                                    <p>Get your parts delivered to you quickly and effortlessly.</p>
-                                </div>
-                            </div>
-                            <div class="about_parts">
-                                <div class="img">
-                                    <img src="./assets/imgs/Package.svg" width="32" alt="">
-                                </div>
-                                <div class="text-content">
-                                    <h6>Or pickup your items fresh from our warehouse</h6>
-                                    <p>Collect your items directly from our pick-up points.</p>
-                                </div>
-                            </div>
-                            <div class="about_parts">
-                                <div class="img">
-                                    <img src="./assets/imgs/Headset.svg" width="32" alt="">
-                                </div>
-                                <div class="text-content">
-                                    <h6>We have active support 24/7</h6>
-                                    <p>Collect your items directly from our pick-up points.</p>
-                                </div>
+                            <div class="text-content">
+                                <h6>
+                                    Select the parts you need with our extensive
+                                    range of options
+                                </h6>
+                                <p>
+                                    Choose the perfect parts from our extensive,
+                                    high-quality range for any HVAC system.
+                                </p>
                             </div>
                         </div>
+                        <div class="about_parts">
+                            <div class="img">
+                                <img
+                                    src="./assets/imgs/Truck.svg"
+                                    width="32"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="text-content">
+                                <h6>
+                                    Have it delivered to your location
+                                    hassle-free
+                                </h6>
+                                <p>
+                                    Get your parts delivered to you quickly and
+                                    effortlessly.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about_parts">
+                            <div class="img">
+                                <img
+                                    src="./assets/imgs/Package.svg"
+                                    width="32"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="text-content">
+                                <h6>
+                                    Or pickup your items fresh from our
+                                    warehouse
+                                </h6>
+                                <p>
+                                    Collect your items directly from our pick-up
+                                    points.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about_parts">
+                            <div class="img">
+                                <img
+                                    src="./assets/imgs/Headset.svg"
+                                    width="32"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="text-content">
+                                <h6>We have active support 24/7</h6>
+                                <p>
+                                    Collect your items directly from our pick-up
+                                    points.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-                        <div class="browse_product">
-                            <a href="#" class="btn">Browse Products <i class="fa-solid fa-arrow-right"></i></a>
+                    <div class="browse_product">
+                        <a href="#" class="btn"
+                            >Browse Products
+                            <i class="fa-solid fa-arrow-right"></i
+                        ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 p-0">
+                <img
+                    src="./assets/imgs/getting_parts.jpg"
+                    alt=""
+                    class="object-fit"
+                />
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="valuable_info">
+    <div class="container">
+        <div class="row mb-5 mb-lg-0 pb-3 pb-lg-0 justify-content-between align-items-center">
+            <div class="col-lg-6">
+                <h2>Learn valuable information from our HVAC experts</h2>
+            </div>
+            <div class="col-lg-6 text-end">
+                <a href="" class="btn"
+                    >View More Resources <i class="fa-solid fa-arrow-right"></i
+                ></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="post_card resources_card">
+                    <figure>
+                        <img
+                            src="./assets/imgs/resource_1.jpg"
+                            alt=""
+                            class="object-fit"
+                        />
+                    </figure>
+
+                    <div class="card_body">
+                        <strong class="small text_primary">Maintenance</strong>
+                        <div class="post_title h3">
+                            Beat the Heat: Effective Air Conditioning
+                            Maintenance Techniques
                         </div>
                     </div>
                 </div>
-                <div class="col-6 p-0">
-                    <img src="./assets/imgs/getting_parts.jpg" alt="" class="object-fit">
+            </div>
+            <div class="col-lg-6">
+                <div class="resource_details gap-4 gap-lg-0 row mx-auto">
+                    <div class="col-lg-8 p-0 ps-lg-0">
+                        <h4>
+                            Strategic Cooling Solutions: Essential Tips for
+                            Business Partners
+                        </h4>
+                        <div class="text_logo">
+                            <i class="fa-light fa-calendar"></i>
+                            June 24, 2024 — Monday
+                        </div>
+                        <div class="text_logo">
+                            <i class="fa-regular fa-location-dot"></i>
+                            Concepcion Industrial Corporation Km 20 East Service
+                            Road South Superhighway, Alabang, Muntinlupa City,
+                            1771, Philippines
+                        </div>
+
+                        <a href="" class="default"
+                            >Learn More <i class="fa-solid fa-arrow-right"></i
+                        ></a>
+                    </div>
+                    <div class="col-lg-4 order-first order-lg-last p-0 pe-lg-0">
+                        <div class="resource_img">
+                            <img
+                                src="./assets/imgs/resource_2.jpg"
+                                alt=""
+                                class="object-fit"
+                            />
+
+                            <div class="overlay_date">
+                                <span>June</span>
+                                <span>24</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid_post">
+                    <div class="post_col">
+                        <div class="post_card">
+                            <figure>
+                                <img
+                                    src="./assets/imgs/resource_3.jpg"
+                                    alt=""
+                                    class="object-fit"
+                                />
+                            </figure>
+
+                            <div class="card_body">
+                                <strong class="small text_primary"
+                                    >Maintenance</strong
+                                >
+                                <div class="post_title h4 m-0">
+                                    Expert Advice: Proven Strategies for Air
+                                    Conditioning Maintenance
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post_col">
+                        <div class="post_card">
+                            <figure>
+                                <img
+                                    src="./assets/imgs/resource_4.jpg"
+                                    alt=""
+                                    class="object-fit"
+                                />
+                            </figure>
+
+                            <div class="card_body">
+                                <strong class="small text_primary"
+                                    >Maintenance</strong
+                                >
+                                <div class="post_title h4 m-0">
+                                    Year-Round Comfort: Key Air Conditioning
+                                    Maintenance Practices
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="valuable_info">
+<section class="article_post">
+    <div class="whats_new bg_primary">
         <div class="container">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-6">
-                    <h2>Learn valuable information from our HVAC experts</h2>
-                </div>
-                <div class="col-6 text-end">
-                <a href="" class="btn">View More Resources <i class="fa-solid fa-arrow-right"></i></a>
-                      </div>
-            </div>
+            <div class="d-lg-flex justify-content-between align-items-center">
+                <h3 class="m-0 text-white">What’s new at Totaline</h3>
 
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="post_card resources_card">
+                <a href="" class="btn secondary_btn"
+                    >view more articles <i class="fa-solid fa-arrow-right"></i
+                ></a>
+            </div>
+        </div>
+    </div>
+    <div class="article_posts">
+        <div class="container">
+            <div class="row gap-5 gap-md-0">
+                <div class="col-md-2 col-lg-4">
+                    <div class="post_card">
                         <figure>
-                            <img src="./assets/imgs/resource_1.jpg" alt="" class="object-fit">
+                            <img
+                                src="./assets/imgs/article_1.jpg"
+                                alt=""
+                                class="object-fit"
+                            />
                         </figure>
 
                         <div class="card_body">
-                            <strong class="small text_primary">Maintenance</strong>
-                                <div class="post_title  h3">Beat the Heat: Effective Air Conditioning Maintenance Techniques</div>
+                            <strong class="small">May 22, 2024</strong>
+                            <div class="post_title h4 m-0">
+                                Mastering Indoor Air Quality: Insights from the
+                                Leading HVAC Experts
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="resource_details row mx-auto">
-                        <div class="col-8 ps-0">
-                            <h4>Strategic Cooling Solutions: Essential Tips for Business Partners</h4>
-                            <div class="text_logo">
-                                <i class="fa-light fa-calendar"></i>
-                                June 24, 2024 — Monday
-                            </div>
-                            <div class="text_logo">
-                                <i class="fa-regular fa-location-dot"></i>
-                                Concepcion Industrial Corporation Km 20 East Service Road South Superhighway, Alabang,
-                                Muntinlupa City, 1771, Philippines
-                            </div>
+                <div class="col-md-2 col-lg-4">
+                    <div class="post_card">
+                        <figure>
+                            <img
+                                src="./assets/imgs/article_2.jpg"
+                                alt=""
+                                class="object-fit"
+                            />
+                        </figure>
 
-                            <a href="" class="default">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-
-                        </div>
-                        <div class="col-4 pe-0">
-                            <div class="resource_img">
-                                <img src="./assets/imgs/resource_2.jpg" alt="" class="object-fit">
-
-                                <div class="overlay_date">
-                                    <span>June</span>
-                                    <span>24</span>
-                                </div>
+                        <div class="card_body">
+                            <strong class="small">May 22, 2024</strong>
+                            <div class="post_title h4 m-0">
+                                Mastering Indoor Air Quality: Insights from the
+                                Leading HVAC Experts
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="col-md-2 col-lg-4">
+                    <div class="post_card">
+                        <figure>
+                            <img
+                                src="./assets/imgs/article_3.jpg"
+                                alt=""
+                                class="object-fit"
+                            />
+                        </figure>
 
-                    <div class="grid_post">
-                        <div class="post_col">
-                            <div class="post_card">
-                                <figure>
-                                    <img src="./assets/imgs/resource_3.jpg" alt="" class="object-fit">
-                                </figure>
-        
-                                <div class="card_body">
-                                    <strong class="small text_primary">Maintenance</strong>
-                                        <div class="post_title  h4 m-0">Expert Advice: Proven Strategies for Air Conditioning Maintenance</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="post_col">
-                            <div class="post_card">
-                                <figure>
-                                    <img src="./assets/imgs/resource_4.jpg" alt="" class="object-fit">
-                                </figure>
-        
-                                <div class="card_body">
-                                    <strong class="small text_primary">Maintenance</strong>
-                                        <div class="post_title  h4 m-0">Year-Round Comfort: Key Air Conditioning Maintenance Practices</div>
-                                </div>
+                        <div class="card_body">
+                            <strong class="small">May 22, 2024</strong>
+                            <div class="post_title h4 m-0">
+                                Mastering Indoor Air Quality: Insights from the
+                                Leading HVAC Experts
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="article_post">
-        <div class="whats_new bg_primary">
-            <div class="container">
-                <div class="d-flex justify-content-between align-items-center">
-                    <h3 class="m-0 text-white">What’s new at Totaline</h3>
+<footer>
+  <div class="top-footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-xl-4 col-lg-3 col-md-3 col-sm-12">
+                  <div class="footer-logo">
+                      <a href="index.html">
+                          <img src="./assets/imgs/footer-logo.png" alt="footer logo" class="img-fluid">
+                      </a>
+                  </div>
+              </div>
+              <div class="col-xl-8 col-md-9 col-md-9 col-sm-12">
+                  <div class="row justify-content-between">
+                      <div class="col-xl-auto col-lg-3 col-md-3 col-sm-12">
+                          <h5>Products</h5>
+                          <ul>
+                              <li><a href="#">Install Materials</a></li>
+                              <li><a href="#">Factory Approved Parts</a></li>
+                              <li><a href="#">Universal</a></li>
+                              <li><a href="#">Compressors</a></li>
+                              <li><a href="#">Tools & Equipment</a></li>
+                          </ul>
+                      </div>
 
-                    <a href="" class="btn secondary_btn">view more articles <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="article_posts">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-2 col-lg-4">
-                        <div class="post_card">
-                            <figure>
-                                <img src="./assets/imgs/article_1.jpg" alt="" class="object-fit">
-                            </figure>
+                      <div class="col-xl-auto col-lg-3 col-md-3 col-sm-12">
+                          <h5>Quick Links</h5>
+                          <ul>
+                              <li><a href="#">About Totaline</a></li>
+                              <li><a href="#">Resources</a></li>
+                              <li><a href="#">News</a></li>
+                              <li><a href="#">FAQs</a></li>
+                              <li><a href="#">Contact</a></li>
+                          </ul>
+                      </div>
 
-                            <div class="card_body">
-                                <strong class="small">May 22, 2024</strong>
-                                <div class="post_title  h4 m-0">Mastering Indoor Air Quality: Insights from the Leading
-                                    HVAC
-                                    Experts</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-lg-4">
-                        <div class="post_card">
-                            <figure>
-                                <img src="./assets/imgs/article_2.jpg" alt="" class="object-fit">
-                            </figure>
+                      <div class="col-xl-auto col-lg-3 col-md-3 col-sm-12">
+                          <h5>Store Locations</h5>
+                          <ul>
+                              <li><a href="#">Alabang</a></li>
+                              <li><a href="#">CDO</a></li>
+                              <li><a href="#">Cebu</a></li>
+                              <li><a href="#">Dagupan</a></li>
+                              <li><a href="#">Davao</a></li>
+                              <li><a href="#">Iloilo</a></li>
+                              <li><a href="#">Pampanga</a></li>
+                              <li><a href="#">Quezon City</a></li>
+                          </ul>
+                      </div>
 
-                            <div class="card_body">
-                                <strong class="small">May 22, 2024</strong>
-                                <div class="post_title  h4 m-0">Mastering Indoor Air Quality: Insights from the Leading
-                                    HVAC
-                                    Experts</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-lg-4">
-                        <div class="post_card">
-                            <figure>
-                                <img src="./assets/imgs/article_3.jpg" alt="" class="object-fit">
-                            </figure>
+                      <div class="col-xl-auto col-lg-3 col-md-3 col-sm-12">
+                          <h5>Operating Hours</h5>
+                          <ul>
+                              <li><a href="#">Voice</a>
+                                  <div class="d-flex justify-content-between gap-3 footer-hrs">
+                                      <p>Mon - Sat</p>
+                                      <p>--</p>
+                                      <p>8AM - 7PM</p>
+                                  </div>
+                              </li>
+                              <li><a href="#">non voice</a>
+                                  <div class="d-flex justify-content-between gap-3 footer-hrs">
+                                      <p>Mon - Sun</p>
+                                      <p>--</p>
+                                      <p>7AM - 12MN</p>
+                                  </div>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="bottom-footer">
+      <div class="container">
+          <div class="row justify-content-between">
+              <div class="col-md-6">
+                  <p class="mb-0">© Totaline Systems. All rights Reserved.</p>
+              </div>
+              <div class="col-md-6">
+                  <ul class="nav gap-5 justify-content-end">
+                      <li><a href="#">Terms & Conditions</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                  </ul>
+              </div>
 
-                            <div class="card_body">
-                                <strong class="small">May 22, 2024</strong>
-                                <div class="post_title  h4 m-0">Mastering Indoor Air Quality: Insights from the Leading
-                                    HVAC
-                                    Experts</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <footer>
-        <div class="top-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-3 col-md-3 col-sm-12">
-                        <div class="footer-logo">
-                            <a href="index.html">
-                                <img src="./assets/imgs/footer-logo.png" alt="footer logo" class="img-fluid">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xl-8 col-md-9 col-md-9 col-sm-12">
-                        <div class="row justify-content-between">
-                            <div class="col-xl-auto col-lg-3 col-md-3 col-sm-12">
-                                <h5>Products</h5>
-                                <ul>
-                                    <li><a href="#">Install Materials</a></li>
-                                    <li><a href="#">Factory Approved Parts</a></li>
-                                    <li><a href="#">Universal</a></li>
-                                    <li><a href="#">Compressors</a></li>
-                                    <li><a href="#">Tools & Equipment</a></li>
-                                </ul>
-                            </div>
-
-                            <div class="col-xl-auto col-lg-3 col-md-3 col-sm-12">
-                                <h5>Quick Links</h5>
-                                <ul>
-                                    <li><a href="#">About Totaline</a></li>
-                                    <li><a href="#">Resources</a></li>
-                                    <li><a href="#">News</a></li>
-                                    <li><a href="#">FAQs</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                </ul>
-                            </div>
-
-                            <div class="col-xl-auto col-lg-3 col-md-3 col-sm-12">
-                                <h5>Store Locations</h5>
-                                <ul>
-                                    <li><a href="#">Alabang</a></li>
-                                    <li><a href="#">CDO</a></li>
-                                    <li><a href="#">Cebu</a></li>
-                                    <li><a href="#">Dagupan</a></li>
-                                    <li><a href="#">Davao</a></li>
-                                    <li><a href="#">Iloilo</a></li>
-                                    <li><a href="#">Pampanga</a></li>
-                                    <li><a href="#">Quezon City</a></li>
-                                </ul>
-                            </div>
-
-                            <div class="col-xl-auto col-lg-3 col-md-3 col-sm-12">
-                                <h5>Operating Hours</h5>
-                                <ul>
-                                    <li><a href="#">Voice</a>
-                                        <div class="d-flex justify-content-between gap-3 footer-hrs">
-                                            <p>Mon - Sat</p>
-                                            <p>--</p>
-                                            <p>8AM - 7PM</p>
-                                        </div>
-                                    </li>
-                                    <li><a href="#">non voice</a>
-                                        <div class="d-flex justify-content-between gap-3 footer-hrs">
-                                            <p>Mon - Sun</p>
-                                            <p>--</p>
-                                            <p>7AM - 12MN</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bottom-footer">
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-md-6">
-                        <p class="mb-0">© Totaline Systems. All rights Reserved.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <ul class="nav gap-5 justify-content-end">
-                            <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-    </footer>
+          </div>
+      </div>
+</footer>
 </body>
 
 <!-- jQuery  -->
 <script src="./assets/js/jQuery/jQuery.min.js"></script>
+    
+<!-- Anime js  -->    
+<script src="./assets/js/anime/anime.min.js"></script>
 
+<!-- magicline js  -->    
+<script src="./assets/js/magicline/magicline.min.js"></script>
+    
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 

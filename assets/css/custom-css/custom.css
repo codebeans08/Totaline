@@ -8,6 +8,8 @@ header {
     header .navbar a,
     header .navbar-brand .nav-link,
     header .navbar-brand a {
+      font-family: "Manrope", sans-serif;
+      font-weight: 600;
       color: #1D1D1D; }
     header .navbar .btn_links a,
     header .navbar-brand .btn_links a {
@@ -24,6 +26,22 @@ header {
       header .navbar-brand .search_header a i {
         color: #fff;
         font-size: 1.6rem; }
+    header .navbar .nav-link,
+    header .navbar-brand .nav-link {
+      padding-block: 2rem;
+      font-size: 1.6rem; }
+      @media (max-width: 991px) {
+        header .navbar .nav-link,
+        header .navbar-brand .nav-link {
+          display: flex;
+          justify-content: space-between; } }
+    header .navbar .nav-item,
+    header .navbar-brand .nav-item {
+      margin: 0; }
+      @media (max-width: 991px) {
+        header .navbar .nav-item:not(last-child) .nav-link,
+        header .navbar-brand .nav-item:not(last-child) .nav-link {
+          border-bottom: 0.1rem solid #D6D6D6; } }
     header .navbar .dropdown,
     header .navbar-brand .dropdown {
       position: unset; }
@@ -78,7 +96,8 @@ header {
         display: inline-block;
         vertical-align: .2rem;
         margin-left: .4rem;
-        color: #CE000B; }
+        color: #CE000B;
+        line-height: 1; }
 
 .navbar-toggler {
   background-color: #000;
@@ -88,14 +107,36 @@ header {
   align-items: center;
   gap: 0.8rem;
   width: 6.4rem;
-  height: 6.4rem;
-  margin-inline-end: -0.75rem; }
+  height: 6.4rem; }
   .navbar-toggler span {
     width: 2.2rem;
     height: 0.2rem;
     background-color: #fff;
     border-radius: 0.5rem;
     display: block; }
+
+/* Required styling */
+.magic-line {
+  z-index: 1;
+  position: absolute;
+  background: #CE000B;
+  height: 0.4rem !important;
+  margin-top: -0.2rem; }
+
+.magic-line-css-transition {
+  transition: all .2s ease-in-out; }
+
+/* DEMO STYLES */
+.magic-line-inner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.4rem; }
+  @media (max-width: 991px) {
+    .magic-line-inner {
+      flex-direction: column;
+      justify-content: start;
+      gap: 0rem; } }
 
 * {
   margin: 0;
@@ -286,6 +327,9 @@ ul li {
       left: 0;
       font-family: "Font Awesome 6 Pro"; }
 
+.container {
+  padding-inline: 1.6rem; }
+
 html {
   font-size: 10px;
   scroll-behavior: smooth; }
@@ -298,6 +342,9 @@ body {
   color: #262626;
   transition: 300ms all ease-in-out;
   overflow-x: hidden; }
+  @media (max-width: 767px) {
+    body {
+      font-size: 1.6rem; } }
 
 h1,
 .h1,
@@ -343,7 +390,7 @@ h5,
 
 h6,
 .h6 {
-  font-size: clamp(1.8rem, 3vw, 2.2rem); }
+  font-size: 2.2rem; }
 
 p {
   margin-block: 0 2.4rem; }
@@ -382,6 +429,9 @@ a.default {
 .primary_banner {
   padding-block: 9.6rem 4rem;
   background-color: #CE000B; }
+  @media (max-width: 767px) {
+    .primary_banner {
+      padding-block: 4rem; } }
   .primary_banner .search_form {
     margin-block: 4rem 5.7rem;
     padding: 1.6rem 2.4rem;
@@ -432,33 +482,40 @@ a.default {
 
 .business_partner {
   background: linear-gradient(#a50009, #7c0007);
-  padding-block: 6rem; }
-  .business_partner .img_row {
-    display: flex;
-    justify-content: space-between; }
-    .business_partner .img_row .img_card {
-      width: 100%;
-      max-width: 32.1rem; }
-      .business_partner .img_row .img_card img {
-        height: 100%;
-        max-height: 22rem;
-        object-fit: cover;
-        border-radius: 0.8rem;
-        box-shadow: 0px 9px 6px rgba(94, 94, 94, 0.15); }
-      .business_partner .img_row .img_card .img_title {
-        color: #fff;
-        font-size: 1.6rem;
+  padding-block: clamp(4rem, 5vw, 6rem); }
+  @media (min-width: 768px) {
+    .business_partner .img_row {
+      display: flex;
+      justify-content: space-between; } }
+  .business_partner .img_row .img_card {
+    width: 100%;
+    max-width: 32.1rem; }
+    .business_partner .img_row .img_card img {
+      height: 100%;
+      max-height: 22rem;
+      object-fit: cover;
+      border-radius: 0.8rem;
+      box-shadow: 0px 9px 6px rgba(94, 94, 94, 0.15); }
+    .business_partner .img_row .img_card .img_title {
+      color: #fff;
+      font-size: 1.6rem;
+      font-family: "Manrope", sans-serif;
+      font-weight: 500;
+      text-align: end;
+      margin-top: 1.8rem; }
+      .business_partner .img_row .img_card .img_title span {
         font-family: "Manrope", sans-serif;
-        font-weight: 500;
-        text-align: end;
-        margin-top: 1.8rem; }
-        .business_partner .img_row .img_card .img_title span {
-          font-family: "Manrope", sans-serif;
-          font-weight: 700; }
-  .business_partner .img_row1 {
-    margin-bottom: -3rem; }
-  .business_partner .img_row2 {
-    margin-top: -3rem; }
+        font-weight: 700; }
+    @media (max-width: 767px) {
+      .business_partner .img_row .img_card:not(last-child) {
+        margin-bottom: 2rem; }
+      .business_partner .img_row .img_card .img_title {
+        text-align: center; } }
+  @media (min-width: 768px) {
+    .business_partner .img_row1 {
+      margin-bottom: -3rem; }
+    .business_partner .img_row2 {
+      margin-top: -3rem; } }
 
 .offer_product {
   padding-block: 3rem; }
@@ -550,6 +607,9 @@ a.default {
     background-color: #fff; }
   .getting_parts .parts_col {
     padding: 6.4rem 4rem; }
+    @media (max-width: 767px) {
+      .getting_parts .parts_col {
+        padding: 3.5rem 2rem; } }
   .getting_parts .parts_list {
     display: inline-grid;
     gap: 3.2rem;
@@ -565,6 +625,12 @@ a.default {
         border-radius: 50%;
         display: grid;
         place-items: center; }
+        @media (max-width: 767px) {
+          .getting_parts .parts_list .about_parts .img {
+            width: 7.4rem;
+            height: 7.4rem; }
+            .getting_parts .parts_list .about_parts .img img {
+              max-width: 3.2rem; } }
   .getting_parts .text-content p {
     margin: 0;
     color: #4D4D4D;
@@ -612,6 +678,9 @@ a.default {
     border-radius: 1.2rem;
     padding: 2.4rem;
     margin-bottom: 2.4rem; }
+    @media (max-width: 767px) {
+      .valuable_info .resource_details {
+        padding: 1.3rem; } }
     .valuable_info .resource_details h4 {
       font-family: "Instrument Sans", sans-serif;
       font-weight: 600; }
@@ -623,6 +692,10 @@ a.default {
       line-height: 1.5;
       align-items: baseline;
       gap: 0.8rem; }
+      @media (max-width: 767px) {
+        .valuable_info .resource_details .text_logo a.default {
+          width: 100%;
+          justify-content: center; } }
     .valuable_info .resource_details i {
       color: #CE000B;
       font-size: 2rem; }
@@ -650,8 +723,11 @@ a.default {
 
 .grid_post {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 2.4rem; }
+  @media (min-width: 768px) {
+    .grid_post {
+      grid-template-columns: repeat(2, 1fr); } }
 
 .bg-img {
   position: absolute;
@@ -1082,7 +1158,8 @@ a.default {
   display: none; }
 
 .all_articles .filter-set {
-  padding: 3.2rem 0; }
+  padding: 3.2rem 0;
+  background-color: #F5F5F5; }
   .all_articles .filter-set h4 {
     margin-bottom: 1.6rem; }
   .all_articles .filter-set p {
@@ -1303,6 +1380,42 @@ a.default {
   .article_banner .main-detail-img img {
     max-height: 50.5rem; } }
 
+.event_details {
+  background-color: #EFECEC;
+  margin: 2.4rem 0 1.5rem;
+  padding: 2.4rem 2.4rem 1.4rem;
+  border-radius: 8px;
+  gap: 2.4rem; }
+  .event_details .event-date .event-month {
+    font-size: 1.4rem;
+    color: #7E7E7E;
+    font-family: "Manrope", sans-serif;
+    font-weight: 700; }
+  .event_details .event-date .event-day {
+    font-size: 2.4rem;
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 500;
+    color: #CE000B; }
+  .event_details .event-description h4 {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 500;
+    margin-bottom: 1.2rem; }
+  .event_details .event-description .event-list {
+    margin-bottom: 1.2rem; }
+    .event_details .event-description .event-list .icon {
+      color: #CE000B;
+      font-size: 1.7rem;
+      line-height: 1.5; }
+      .event_details .event-description .event-list .icon .fa-location-dot {
+        font-size: 2.1rem;
+        line-height: 1.5; }
+  .event_details .event-description .event-about {
+    font-size: 1.6rem;
+    color: #4D4D4D;
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    line-height: 1.5; }
+
 @media (max-width: 767px) {
   .article_banner {
     padding: 4rem 0; }
@@ -1326,4 +1439,121 @@ a.default {
       margin-bottom: 1.6rem !important;
       font-size: 3.5rem; }
   .article_posts {
-    padding-block: 3.2rem 4rem; } }
+    padding-block: 3.2rem 4rem; }
+  .event_details .event-date {
+    padding-inline: 0rem;
+    padding-bottom: 1.6rem; }
+  .event_details {
+    margin: 0; } }
+
+.faq-banner {
+  padding: 11.2rem 0 5.6rem;
+  background: linear-gradient(180deg, #A50009 0%, #7C0007 100%); }
+  .faq-banner .h2 {
+    max-width: 48rem; }
+
+.faq-content {
+  padding: 4rem 0; }
+  .faq-content .soft-filter p {
+    color: #4D4D4D; }
+  .faq-content .faq-tab {
+    position: sticky;
+    top: 2rem; }
+    .faq-content .faq-tab ul::after {
+      position: absolute;
+      top: 0;
+      left: -1.6rem;
+      width: 2px;
+      height: 100%;
+      content: "";
+      background: #D6D6D6; }
+    .faq-content .faq-tab ul li a {
+      padding: 1.4rem 0;
+      position: relative;
+      font-size: 2.2rem;
+      color: #606060;
+      font-family: "Instrument Sans", sans-serif;
+      font-weight: 500;
+      line-height: 1.1;
+      display: block;
+      transition: color 0.3s ease, font-weight 0.3s ease; }
+      .faq-content .faq-tab ul li a.active {
+        color: #1D1D1D;
+        font-weight: 600; }
+        .faq-content .faq-tab ul li a.active::after {
+          position: absolute;
+          top: 0;
+          left: -1.6rem;
+          width: 6px;
+          height: 100%;
+          content: "";
+          background: #CE000B;
+          z-index: 1;
+          transition: all 0.3s ease; }
+  .faq-content .faq-list {
+    padding-left: 5rem; }
+    .faq-content .faq-list h4 {
+      font-size: 2.4rem;
+      background: #F5F5F5;
+      padding: 1.6rem 2.4rem;
+      margin-bottom: 1rem;
+      font-weight: 600; }
+    .faq-content .faq-list .accordion-button {
+      font-size: 2.2rem;
+      padding: 2.0rem 3.0rem 2.0rem 0;
+      font-weight: 500;
+      position: relative;
+      line-height: 1.1; }
+      .faq-content .faq-list .accordion-button::after {
+        content: '\f106';
+        font-family: "Font Awesome 6 Pro";
+        display: inline-block;
+        color: #CE000B;
+        top: 42%;
+        right: 1rem;
+        position: absolute;
+        transform: translateY(-50%);
+        pointer-events: none;
+        background: none !important; }
+      .faq-content .faq-list .accordion-button:focus {
+        outline: none;
+        background: #fff;
+        box-shadow: none; }
+    .faq-content .faq-list .accordion-button.collapsed {
+      position: relative; }
+      .faq-content .faq-list .accordion-button.collapsed::after {
+        content: '\f107';
+        font-family: "Font Awesome 6 Pro";
+        display: inline-block;
+        color: #CE000B;
+        top: 42%;
+        right: 1rem;
+        position: absolute;
+        transform: translateY(-50%);
+        pointer-events: none; }
+    .faq-content .faq-list .accordion-button:not(.collapsed) {
+      color: #CE000B;
+      background: none; }
+    .faq-content .faq-list .accordion-flush > .accordion-item:last-child {
+      border-bottom: 1px solid #D6D6D6;
+      margin-bottom: 4rem; }
+    .faq-content .faq-list .accordion-body {
+      padding: 0; }
+
+@media (max-width: 1399px) {
+  .faq-content .faq-tab ul li a, .faq-content .faq-list .accordion-button {
+    font-size: 1.8rem; } }
+
+@media (max-width: 991px) {
+  .faq-content .faq-list {
+    padding-left: 1rem; } }
+
+@media (max-width: 767px) {
+  .faq-content .faq-list {
+    padding-left: 0rem; }
+  .faq-tab {
+    display: none; }
+  .faq-content .faq-tab ul li a, .faq-content .faq-list .accordion-button {
+    font-size: 2.2rem; }
+  p {
+    font-size: 1.8rem; } }

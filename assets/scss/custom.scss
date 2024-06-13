@@ -70,12 +70,12 @@ ul li{
 
 .check_list ul{
     padding: 0;
-    
+
     li{
         position: relative;
         padding-inline-start: 2.8rem;
         list-style: none;
-        
+
 
         &::before{
             content: '\f058';
@@ -83,9 +83,13 @@ ul li{
             position: absolute;
             left:0;
             font-family: $fontawesome;
-            
+
         }
     }
+}
+
+.container{
+    padding-inline: 1.6rem;
 }
 
 // form input[type="submit"] {
@@ -104,6 +108,10 @@ body {
     color: $body_text;
     @include transition();
     overflow-x: hidden;
+
+    @media(max-width: 767px){
+ font-size: 1.6rem;
+    }
 }
 
 h1,
@@ -153,7 +161,7 @@ h5,
 }
 h6,
 .h6 {
-    font-size: clamp(1.8rem, 3vw, 2.2rem);
+    font-size:  2.2rem;
 }
 p {
     margin-block: 0 2.4rem;
@@ -203,6 +211,10 @@ a.default{
 .primary_banner {
     padding-block: 9.6rem 4rem;
     background-color: $primary;
+
+    @media(max-width: 767px){
+         padding-block: 4rem;
+    }
 
     .search_form {
         margin-block: 4rem 5.7rem;
@@ -281,15 +293,20 @@ a.default{
 
 .business_partner {
     background: linear-gradient(rgba(165, 0, 9, 1), rgba(124, 0, 7, 1));
-    padding-block: 6rem;
+    padding-block: clamp(4rem,5vw,6rem,);
+
+    
 
     .img_row {
-        display: flex;
-        justify-content: space-between;
-
+        @media(min-width: 768px){
+            display: flex;
+            justify-content: space-between;
+        }
         .img_card {
             width: 100%;
             max-width: 32.1rem;
+
+            
 
             img {
                 height: 100%;
@@ -311,16 +328,29 @@ a.default{
                 }
 
             }
+
+            @media(max-width: 767px){
+                &:not(last-child){
+                margin-bottom: 2rem;}
+
+                .img_title {
+                    text-align: center;
+                }
+            }
         }
     }
 
-    .img_row1 {
-        margin-bottom: -3rem;
+    @media(min-width: 768px){
+        .img_row1 {
+                margin-bottom: -3rem;
+            }
+        
+            .img_row2 {
+                margin-top: -3rem;
+            }
     }
 
-    .img_row2 {
-        margin-top: -3rem;
-    }
+    
 }
 
 .offer_product{
@@ -352,7 +382,7 @@ a.default{
             }
 
             .product-img img{
-               
+
                 max-width: 38.9rem;
             }
 
@@ -377,7 +407,7 @@ a.default{
                     @include body_bold();
                     font-size: 1.2rem;
                     letter-spacing: 0.12rem;
-                    
+
                 }
             }
 
@@ -413,7 +443,7 @@ a.default{
                     font-size: clamp(2.5rem , 2vw, 3.6rem);
                     @include header-semibold();
                     display: none;
-                    
+
                 }
 
                 .regular-price{
@@ -427,7 +457,7 @@ a.default{
                         top: 50%;
                         left: 0;
                         transform: translateY(-50%) rotate(-10deg);
-                        
+
                     }
                 }
             }
@@ -446,7 +476,7 @@ a.default{
 
 .getting_parts{
     padding-bottom: 4rem;
-    
+
     .parts_container{
       @extend .box-shadow;
         border-radius: 1.2rem;
@@ -456,13 +486,17 @@ a.default{
 
     .parts_col{
         padding: 6.4rem 4rem;
+
+        @media(max-width: 767px){
+            padding: 3.5rem 2rem;
+        }
     }
 
     .parts_list{
         display: inline-grid;
         gap: 3.2rem;
         margin-top: 1.6rem;
-        
+
         .about_parts {
             display: grid;
             grid-template-columns: max-content auto;
@@ -475,6 +509,15 @@ a.default{
                 border-radius: 50%;
                 display: grid;
                 place-items: center;
+
+                @media(max-width: 767px){
+                    width: 7.4rem;
+                    height: 7.4rem;
+
+                    img{
+                        max-width: 3.2rem;
+                    }
+                }
             }
         }
     }
@@ -545,11 +588,15 @@ a.default{
         border-radius: 1.2rem;
         padding: 2.4rem;
         margin-bottom: 2.4rem;
-       
+
+        @media(max-width: 767px){
+ padding: 1.3rem;
+        }
+
          h4 {
             @include header-semibold();
         }
-        
+
         .text_logo {
             @include body_semi_bold();
             display: flex;
@@ -557,6 +604,13 @@ a.default{
             line-height: 1.5;
             align-items: baseline;
             gap: 0.8rem;
+
+            @media(max-width: 767px){
+                a.default {
+                    width: 100%;
+                    justify-content: center;
+                }
+            }
         }
 
         i{
@@ -597,8 +651,12 @@ a.default{
 
 .grid_post{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 2.4rem;
+
+    @media(min-width: 768px){
+grid-template-columns: repeat(2, 1fr);
+    }
 }
 // about us page css
 .bg-img {
@@ -1290,6 +1348,7 @@ a.default{
 
     .filter-set {
         padding: 3.2rem 0;
+        background-color:$tertiary;
 
         h4 {
             margin-bottom: 1.6rem
@@ -1301,11 +1360,11 @@ a.default{
         }
     }
 
-    
+
     .filter-show {
         padding: 5rem 0 8rem;
 
-     
+
 
         // .btwob_section {
         //     padding: 4rem 0;
@@ -1709,6 +1768,62 @@ a.default{
     }
 }
 
+// news details page
+.event_details {
+    background-color:$light-gray;
+     margin: 2.4rem 0 1.5rem;
+    padding:2.4rem 2.4rem 1.4rem;
+    border-radius :8px;
+    gap:2.4rem;
+
+    .event-date {
+
+
+        .event-month {
+          font-size: 1.4rem;
+            color :$text-light;
+            @include body_bold();
+        }
+
+        .event-day {
+            font-size:2.4rem;
+            @include header-medium();
+            color:$primary;
+        }
+    }
+    .event-description {
+        h4 {
+            @include header-medium();
+            margin-bottom:1.2rem;
+        }
+
+        .event-list {
+            margin-bottom:1.2rem;
+
+
+            .icon {
+                color : $primary;
+                font-size: 1.7rem;
+                line-height: 1.5;
+
+                .fa-location-dot {
+                    font-size: 2.1rem;
+                    line-height: 1.5;
+                }
+            }
+        }
+
+
+        .event-about {
+            font-size:1.6rem;
+            color:$body-light-text;
+            @include body_medium();
+            line-height: 1.5;
+        }
+    }
+
+}
+
 
 @media (max-width: 767px) {
     .article_banner {
@@ -1750,4 +1865,176 @@ a.default{
     .article_posts {
       padding-block: 3.2rem 4rem;
     }
+    .event_details .event-date {
+      padding-inline: 0rem;
+      padding-bottom: 1.6rem;
+    }
+
+    .event_details {
+        margin:0;
+    }
+}
+
+
+// FAQ's css
+.faq-banner {
+  padding: 11.2rem 0 5.6rem;
+    background:$bg-gr-primary;
+
+    .h2{
+      max-width: 48rem;
+    }
+}
+
+.faq-content {
+  padding: 4rem 0;
+
+  .soft-filter  p {
+      color: $body-light-text;
+    }
+
+    .faq-tab{
+          position: sticky;
+          top: 2rem;
+        ul {
+            &::after {
+                position: absolute;
+                  top: 0;
+                  left: -1.6rem;
+                  width: 2px;
+                  height: 100%;
+                  content: "";
+                  background: #D6D6D6;
+
+            }
+            li {
+                a {
+                    padding: 1.4rem 0;
+                    position: relative;
+                    font-size: 2.2rem;
+                    color: $neutral_grey;
+                    @include header-medium();
+                    line-height: 1.1;
+                    display: block;
+                    transition: color 0.3s ease, font-weight 0.3s ease;
+
+                    &.active {
+                        color: $secondary;
+                        font-weight: 600;
+
+                        &::after {
+                            position: absolute;
+                            top: 0;
+                            left: -1.6rem;
+                            width: 6px;
+                            height: 100%;
+                            content: "";
+                            background: $primary;
+                            z-index: 1;
+                            transition: all 0.3s ease; 
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+
+    .faq-list {
+          padding-left: 5rem;
+        h4 {
+            font-size:2.4rem;
+            background:$tertiary;
+            padding:1.6rem 2.4rem;
+            margin-bottom:1rem;
+            font-weight:600;
+            
+        }
+
+        .accordion-button {
+            font-size: 2.2rem;
+            padding:2.0rem 3.0rem 2.0rem 0;
+            font-weight:500;
+            position:relative;
+            line-height: 1.1;
+            
+            &::after {
+                content: '\f106';
+                  font-family: "Font Awesome 6 Pro";
+                  display: inline-block;
+                  color: #CE000B;
+                  top: 42%;
+                  right: 1rem;
+                  position: absolute;
+                  transform: translateY(-50%);
+                  pointer-events: none;
+                background:none !important;
+
+            }
+
+            &:focus {
+                outline:none;
+                background:#fff;
+                box-shadow:none;
+            }
+        }
+
+        .accordion-button.collapsed {
+            position:relative;
+            &::after {
+                content: '\f107';
+                  font-family: "Font Awesome 6 Pro";
+                  display: inline-block;
+                  color: #CE000B;
+                  top: 42%;
+                  right: 1rem;
+                  position: absolute;
+                  transform: translateY(-50%);
+                  pointer-events: none;
+            }
+
+        }
+
+        .accordion-button:not(.collapsed) {
+            color :$primary;
+            background:none;
+        }
+        .accordion-flush > .accordion-item:last-child {
+          border-bottom: 1px solid #D6D6D6;
+          margin-bottom: 4rem;
+        }
+        .accordion-body {
+          padding: 0;
+        }
+    }
+}
+@media (max-width : 1399px) {
+    .faq-content .faq-tab ul li a,.faq-content .faq-list .accordion-button {
+      font-size: 1.8rem;
+    }
+
+ }
+    @media (max-width: 991px) {
+        .faq-content .faq-list {
+            padding-left: 1rem;
+          }
+    }
+
+@media (max-width : 767px) {
+    .faq-content .faq-list {
+        padding-left: 0rem;
+       
+    }
+
+    .faq-tab {
+        display:none;
+    }
+      .faq-content .faq-tab ul li a, .faq-content .faq-list .accordion-button {
+        font-size: 2.2rem;
+      }
+    p {
+        font-size:1.8rem;
+    }
+    
 }
