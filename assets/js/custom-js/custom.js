@@ -6,6 +6,11 @@ $(document).ready(function () {
         $(".mega-menu-area").slideToggle("slow");
     });
 
+    $(".navbar-toggler").click(function () {
+        $(".navbar-toggler").toggleClass("active");
+        $(".collapse").slideToggle("slow");
+    });
+
     // Home Page Banner Slider
     var swiper = new Swiper("#product_slider", {
         loop: true,
@@ -51,24 +56,21 @@ var scrollEventEnabled = true;
 
 $("#faq-menu a").on("click", function (event) {
     event.preventDefault();
-
     scrollEventEnabled = false;
-
     $("#faq-menu a").removeClass("active");
-
     $(this).addClass("active");
-
     var targetId = $(this).attr("href").substring(1);
     var targetElement = $("#" + targetId);
     var offsetPosition = targetElement.offset().top - 20;
-
     $("html, body").animate(
         {
             scrollTop: offsetPosition,
         },
         500,
         function () {
-            scrollEventEnabled = true;
+            setTimeout(function () {
+                scrollEventEnabled = true;
+            }, 100);
         },
     );
 });
@@ -90,22 +92,13 @@ $(window).on("scroll", function () {
     });
 });
 
-
-
-
-var myMagicLine = new magicLine(document.querySelectorAll(".navbar-nav"), {
-    mode: "line",
-    animationCallback: function (el, params) {
-        anime({
-            targets: el,
-            left: params.left,
-            top: params.top,
-            width: params.width,
-            height: params.height,
-        });
-    },
+// faq select for mobile
+$(".hide").show();
+$("#faqs-filter").change(function () {
+    var select = $(this).find(":selected").val();
+    $(".hide").hide();
+    $("#" + select).show();
 });
-myMagicLine.init();
 
 // artical details swiper
 new Swiper(".artical-details", {
@@ -149,3 +142,17 @@ $(".copyButton").on("click", function (event) {
         },
     );
 });
+
+var myMagicLine = new magicLine(document.querySelectorAll(".navbar-nav"), {
+    mode: "line",
+    animationCallback: function (el, params) {
+        anime({
+            targets: el,
+            left: params.left,
+            top: params.top,
+            width: params.width,
+            height: params.height,
+        });
+    },
+});
+myMagicLine.init();

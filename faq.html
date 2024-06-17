@@ -216,7 +216,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-10 col-md-11">
                         <div class="row justify-content-center">
-                            <div class="col-lg-3 col-md-4">
+                            <div class="col-lg-3 col-md-4 order-1">
                                 <div class="faq-tab">
                                     <nav>
                                         <ul
@@ -1523,12 +1523,5 @@
     <!-- bootstrap js  -->
     <script src="./assets/js/bootstrap/bootstrap.bundle.min.js"></script>
 
-    <script>
-        $(".hide").show();
-        $('#faqs-filter').change(function () {
-            var select = $(this).find(':selected').val();
-            $(".hide").hide();
-            $('#' + select).show();
-        });
-    </script>
+
 </html>
