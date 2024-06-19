@@ -1,304 +1,225 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Dashboard | Totaline</title>
-        <link
-            rel="stylesheet"
-            href="./assets/css/bootstrap/bootstrap.min.css"
-        />
-        <link rel="stylesheet" href="./assets/css/custom-css/custom.css" />
 
-        <!-- fonts  -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
-            rel="stylesheet"
-        />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Totaline</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/custom-css/custom.css" />
 
-        <!-- Instrument Sans -->
+    <!-- fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
 
-        <link
-            href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
-            rel="stylesheet"
-        />
+    <!-- Instrument Sans -->
 
-        <!-- fontawesome pro  -->
-        <link
-            rel="stylesheet"
-            href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
-        />
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet" />
 
-        <!-- swiper slider  -->
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-        />
-    </head>
+    <!-- fontawesome pro  -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css" />
 
-    <body>
-        <!-- header start  -->
-        <header>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="./assets/imgs/logo.png" alt="" width="150" />
-                    </a>
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav"
-                        aria-controls="navbarNav"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    <div
-                        class="collapse navbar-collapse justify-content-center"
-                        id="navbarNav"
-                    >
-                        <div
-                            class="menu_btn gap-5 d-flex d-lg-none align-items-center py-5"
-                        >
-                            <div class="btn_links d-flex gap-2">
-                                <a href="/"
-                                    >Cart
-                                    <i class="fa-regular fa-cart-shopping"></i>
-                                </a>
-                            </div>
+    <!-- swiper slider  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
 
-                            <div class="btn_links d-flex gap-2">
-                                <a href="/"
-                                    >login
-                                    <i class="fa-light fa-circle-user"></i
-                                ></a>
-                            </div>
-                        </div>
-                        <ul class="navbar-nav gap-5">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#">
-                                    Products
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a class="dropdown-item" href="#"
-                                            >Action</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#"
-                                            >Another action</a
-                                        >
-                                    </li>
-
-                                    <li>
-                                        <a class="dropdown-item" href="#"
-                                            >Something else here</a
-                                        >
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About Totaline</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#">
-                                    Resources & News
-                                </a>
-                                <div class="mega-menu-area">
-                                    <div class="mega-menu">
-                                        <div class="container">
-                                            <div class="row menu_row">
-                                                <div class="col-5">
-                                                    <h3 class="h2 text_primary">
-                                                        Resources & News
-                                                    </h3>
-                                                    <p>
-                                                        Learn from our knowledge
-                                                        hub and learn about the
-                                                        latest updates on
-                                                        Totaline.
-                                                    </p>
-                                                </div>
-
-                                                <div class="col-auto">
-                                                    <ul class="dropdown-menu">
-                                                        <li>
-                                                            <a
-                                                                class="dropdown-item"
-                                                                href="#"
-                                                                >Action</a
-                                                            >
-                                                        </li>
-                                                        <li>
-                                                            <a
-                                                                class="dropdown-item"
-                                                                href="#"
-                                                                >Another
-                                                                action</a
-                                                            >
-                                                        </li>
-
-                                                        <li>
-                                                            <a
-                                                                class="dropdown-item"
-                                                                href="#"
-                                                                >Something else
-                                                                here</a
-                                                            >
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div
-                        class="menu_btn gap-5 d-none d-lg-flex align-items-center"
-                    >
+<body>
+    <!-- header start  -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/imgs/logo.png" alt="" width="150" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <div class="menu_btn gap-5 d-flex d-lg-none align-items-center py-5">
                         <div class="btn_links d-flex gap-2">
-                            <a href="/"
-                                >Cart
+                            <a href="/">Cart
                                 <i class="fa-regular fa-cart-shopping"></i>
                             </a>
                         </div>
 
                         <div class="btn_links d-flex gap-2">
-                            <a href="/"
-                                >login <i class="fa-light fa-circle-user"></i
-                            ></a>
-                        </div>
-                        <div class="btn_links d-flex gap-2 search_header">
-                            <a href="/">
-                                <i class="fa-light fa-magnifying-glass"></i
-                            ></a>
+                            <a href="/">login
+                                <i class="fa-light fa-circle-user"></i></a>
                         </div>
                     </div>
-                </div>
-            </nav>
-        </header>
+                    <ul class="navbar-nav gap-5">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </li>
 
-        <!-- Dashboard start -->
+                                <li>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
 
-        <section class="dashboard">
-            <div class="container-fluid">
-                <div class="main_content">
-                    <div class="sidebar-wrapper sidebar-w">
-                        <div class="sidebar">
-                            <div
-                                class="offcanvas-md offcanvas-end"
-                                tabindex="-1"
-                                id="sidebarMenu"
-                                aria-labelledby="sidebarMenuLabel"
-                            >
-                                <div class="offcanvas-header">
-                                    <h5
-                                        class="offcanvas-title"
-                                        id="sidebarMenuLabel"
-                                    >
-                                        Company name
-                                    </h5>
-                                    <button
-                                        type="button"
-                                        class="btn-close"
-                                        data-bs-dismiss="offcanvas"
-                                        data-bs-target="#sidebarMenu"
-                                        aria-label="Close"
-                                    ></button>
-                                </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Totaline</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">
+                                Resources & News
+                            </a>
+                            <div class="mega-menu-area">
+                                <div class="mega-menu">
+                                    <div class="container">
+                                        <div class="row menu_row">
+                                            <div class="col-5">
+                                                <h3 class="h2 text_primary">
+                                                    Resources & News
+                                                </h3>
+                                                <p>
+                                                    Learn from our knowledge
+                                                    hub and learn about the
+                                                    latest updates on
+                                                    Totaline.
+                                                </p>
+                                            </div>
 
-                                <div
-                                    class="offcanvas-body d-md-flex flex-column overflow-y-auto"
-                                >
-                                    <div class="user-name">
-                                        <p>Michael Scott</p>
+                                            <div class="col-auto">
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Another
+                                                            action</a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Something else
+                                                            here</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item">
-                                            <a class="active" href="#"
-                                                ><i
-                                                    class="fa-light fa-circle-user"
-                                                ></i>
-                                                Dashboard</a
-                                            >
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="#">
-                                                <i
-                                                    class="fa-regular fa-cart-shopping"
-                                                ></i>
-                                                My Orders</a
-                                            >
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="#">
-                                                <i
-                                                    class="fa-light fa-heart"
-                                                ></i>
-                                                Saved Items</a
-                                            >
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="#">
-                                                <i class="fa-light fa-user"></i>
-                                                Account Details</a
-                                            >
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="#">
-                                                <i class="fa-solid fa-pipe">
-                                                    **</i
-                                                >
-
-                                                Change Password
-                                            </a>
-                                        </li>
-                                    </ul>
                                 </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="menu_btn gap-5 d-none d-lg-flex align-items-center">
+                    <div class="btn_links d-flex gap-2">
+                        <a href="/">Cart
+                            <i class="fa-regular fa-cart-shopping"></i>
+                        </a>
+                    </div>
+
+                    <div class="btn_links d-flex gap-2">
+                        <a href="/">login <i class="fa-light fa-circle-user"></i></a>
+                    </div>
+                    <div class="btn_links d-flex gap-2 search_header">
+                        <a href="/">
+                            <i class="fa-light fa-magnifying-glass"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Dashboard start -->
+
+    <section class="dashboard">
+        <div class="container-fluid">
+            <div class="main_content">
+                <div class="sidebar-wrapper sidebar-w">
+                    <div class="sidebar">
+                        <div class="offcanvas-md offcanvas-end" tabindex="-1" id="sidebarMenu"
+                            aria-labelledby="sidebarMenuLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="sidebarMenuLabel">
+                                    Company name
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    data-bs-target="#sidebarMenu" aria-label="Close"></button>
+                            </div>
+
+                            <div class="offcanvas-body d-md-flex flex-column overflow-y-auto">
+                                <div class="user-name">
+                                    <p>Michael Scott</p>
+                                </div>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="active" href="dashboard.html"><i class="fa-light fa-circle-user"></i>
+                                            Dashboard</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="orders.html">
+                                            <i class="fa-regular fa-cart-shopping"></i>
+                                            My Orders</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="#">
+                                            <i class="fa-light fa-heart"></i>
+                                            Saved Items</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="#">
+                                            <i class="fa-light fa-user"></i>
+                                            Account Details</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="#">
+                                            <i class="fa-solid fa-pipe">
+                                                **</i>
+
+                                            Change Password
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="page-body">
-                        <div class="home-dashboard">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="welcome-back">
-                                            <h3>Welcome, Michael</h3>
-                                            <p>
-                                                This is your Dashboard, here you
-                                                can check your store credit, get
-                                                updated order status, and manage
-                                                your profile.
-                                            </p>
-                                        </div>
+                <div class="page-body">
+                    <div class="home-dashboard">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="welcome-back">
+                                        <h3>Welcome, Michael</h3>
+                                        <p>
+                                            This is your Dashboard, here you
+                                            can check your store credit, get
+                                            updated order status, and manage
+                                            your profile.
+                                        </p>
                                     </div>
+                                </div>
 
-                                    <div class="col-md-6">
-                                        <div class="credit-card h-100">
-                                            <h5>Store Credit</h5>
-                                            <div class="store-card">
-                                                <div
-                                                    class="d-flex justify-content-between card-in"
-                                                >
+                                <div class="col-md-6">
+                                    <div class="credit-card h-100">
+                                        <h5>Store Credit</h5>
+                                        <div class="store-card">
+                                            <div class="Inquire-after">
+                                                <div class="d-flex justify-content-between card-in">
                                                     <div class="div">
                                                         <h6>
                                                             Current Store Credit
@@ -308,20 +229,14 @@
                                                             1,118,497.99
                                                         </h4>
                                                     </div>
-                                                    <a class="default" href="#"
-                                                        >Inquire about Store
+                                                    <a class="default" href="#">Inquire about Store
                                                         Credit
-                                                        <i
-                                                            class="fa-solid fa-arrow-right"
-                                                        ></i
-                                                    ></a>
+                                                        <i class="fa-solid fa-arrow-right"></i></a>
                                                 </div>
 
                                                 <div class="row gap-54">
                                                     <div class="col-auto">
-                                                        <small
-                                                            >Credit Limit</small
-                                                        >
+                                                        <small>Credit Limit</small>
                                                         <h6>
                                                             <span>₱</span>
                                                             9,000,000.00
@@ -329,10 +244,8 @@
                                                     </div>
 
                                                     <div class="col-auto">
-                                                        <small
-                                                            >Store Credit Used
-                                                            This Month</small
-                                                        >
+                                                        <small>Store Credit Used
+                                                            This Month</small>
                                                         <h6>
                                                             <span>₱</span>
                                                             2,505,002.01
@@ -340,32 +253,48 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <!-- ======================================================== -->
+                                            <!-- this is the store credit subject for approval -->
+
+                                            <!-- <div class="d-flex justify-content-center align-items-center h-100">
+                                                <div class="text-center">
+                                                    <h6 class="mb-4">Store Credit Subject for Approval</h6>
+                                                    <div class="div">
+                                                        <a href="" class="secondary_btn">Inquire about Store Credit
+                                                            <i class="fa-solid fa-arrow-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                            <!-- ======================================================== -->
+
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="credit-card h-100">
-                                            <h5>Shipping Address</h5>
-                                            <div class="store-card">
-                                                <div class="card-in">
-                                                    <div class="div">
-                                                        <h6>Make Technology</h6>
-                                                        <p>
-                                                            2296 Chino Roces
-                                                            Ave. Extension,
-                                                            Makati City, Metro
-                                                            Manila Philippines
-                                                            1231
-                                                        </p>
-                                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="credit-card h-100">
+                                        <h5>Shipping Address</h5>
+                                        <div class="store-card">
+                                            <div class="card-in">
+                                                <div class="div">
+                                                    <h6>Make Technology</h6>
+                                                    <p>
+                                                        2296 Chino Roces
+                                                        Ave. Extension,
+                                                        Makati City, Metro
+                                                        Manila Philippines
+                                                        1231
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
 
-                                    <div class="col-md-12">
-                                        <div class="my-order">
-                                            <h5>My Orders</h5>
+                                <div class="col-md-12">
+                                    <div class="my-order">
+                                        <h5>My Orders</h5>
 
+                                        <div class="d-block">
                                             <div class="order-list">
                                                 <a href="#">
                                                     <div class="order">
@@ -375,45 +304,330 @@
                                                     </div>
                                                     <div class="order-teble">
                                                         <div class="row">
-                                                            <div
-                                                                class="col-md-2"
-                                                            >
-                                                                <div
-                                                                    class="stutas"
-                                                                >
-                                                                    <small
-                                                                        >Order
-                                                                        Status</small
-                                                                    >
+                                                            <div class="col-md-2">
+                                                                <div class="stutas">
+                                                                    <small>Order
+                                                                        Status</small>
 
-                                                                    <p
-                                                                        class="mb-0"
-                                                                    >
+                                                                    <p class="mb-0">
                                                                         Pending
                                                                         Approval
                                                                     </p>
                                                                 </div>
                                                             </div>
-                                                            <div
-                                                                class="col-md-2"
-                                                            ></div>
-                                                            <div
-                                                                class="col-md-2"
-                                                            ></div>
-                                                            <div
-                                                                class="col-md-2"
-                                                            ></div>
-                                                            <div
-                                                                class="col-md-2"
-                                                            ></div>
-                                                            <div
-                                                                class="col-md-2"
-                                                            ></div>
+                                                            <div class="col-md-2">
+                                                                <div class="stutas">
+                                                                    <small>Date Ordered</small>
+
+                                                                    <p class="mb-0">
+                                                                        04/01/2024
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <div class="stutas">
+                                                                    <small>Payment Method</small>
+
+                                                                    <p class="mb-0">
+                                                                        Store Credit
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <div class="stutas">
+                                                                    <small>Payment Status</small>
+
+                                                                    <p class="mb-0">
+                                                                        Pending
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <div class="stutas">
+                                                                    <small>Fulfillment Status</small>
+
+                                                                    <p class="mb-0">
+                                                                        Unfulfilled
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <div class="stutas">
+                                                                    <small>Total</small>
+
+                                                                    <p class="mb-0">
+                                                                        ₱ 121,354.00
+                                                                    </p>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </a>
                                             </div>
+
+                                            <div class="order-list">
+                                                <a href="#">
+                                                    <div class="order">
+                                                        <h4 class="mb-0">
+                                                            # PP1076
+                                                        </h4>
+                                                    </div>
+                                                    <div class="order-teble">
+                                                        <div class="row">
+                                                            <div class="col-md-2">
+                                                                <div class="stutas">
+                                                                    <small>Order
+                                                                        Status</small>
+
+                                                                    <p class="mb-0">
+                                                                        Pending
+                                                                        Preparing Order
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <div class="stutas">
+                                                                    <small>Date Ordered</small>
+
+                                                                    <p class="mb-0">
+                                                                        04/01/2024
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <div class="stutas">
+                                                                    <small>Payment Method</small>
+
+                                                                    <p class="mb-0">
+                                                                        Store Credit
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <div class="stutas">
+                                                                    <small>Payment Status</small>
+
+                                                                    <p class="mb-0">
+                                                                        Pending
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <div class="stutas">
+                                                                    <small>Fulfillment Status</small>
+
+                                                                    <p class="mb-0">
+                                                                        Unfulfilled
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <div class="stutas">
+                                                                    <small>Total</small>
+
+                                                                    <p class="mb-0">
+                                                                        ₱ 121,354.00
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="order-list">
+                                                <a href="#">
+                                                    <div class="order">
+                                                        <h4 class="mb-0">
+                                                            # PP1072
+                                                        </h4>
+                                                    </div>
+                                                    <div class="order-teble">
+                                                        <div class="row">
+                                                            <div class="col-md-2">
+                                                                <div class="stutas">
+                                                                    <small>Order
+                                                                        Status</small>
+
+                                                                    <p class="mb-0">
+                                                                        Pending
+                                                                        Approval
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <div class="stutas">
+                                                                    <small>Date Ordered</small>
+
+                                                                    <p class="mb-0">
+                                                                        04/01/2024
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <div class="stutas">
+                                                                    <small>Payment Method</small>
+
+                                                                    <p class="mb-0">
+                                                                        Store Credit
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <div class="stutas">
+                                                                    <small>Payment Status</small>
+
+                                                                    <p class="mb-0">
+                                                                        Pending
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <div class="stutas">
+                                                                    <small>Fulfillment Status</small>
+
+                                                                    <p class="mb-0">
+                                                                        Unfulfilled
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <div class="stutas">
+                                                                    <small>Total</small>
+
+                                                                    <p class="mb-0">
+                                                                        ₱ 121,354.00
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+
+                                            <div class="banner-btn text-center d-flex justify-content-center mt-5">
+                                                <a class="read-more-btn" href="#">View My Orders
+                                                    <i class="fa-solid fa-arrow-right"></i></a>
+                                            </div>
                                         </div>
+
+                                        <!-- ======================================================== -->
+
+                                        <!-- whner there is no order then use this code-->
+
+                                        <!-- ======================================================== -->
+
+                                        <!-- this is the store credit subject for approval -->
+
+                                        <!-- <div class="d-flex justify-content-center align-items-center order-notfound">
+                                            <div class="text-center">
+                                                <h6 class="mb-4">No Current Orders found</h6>
+                                                <div class="div">
+                                                    <a href="" class="secondary_btn">View our Products</a>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                        <!-- ======================================================== -->
+                                    </div>
+
+
+
+
+                                </div>
+
+                                <div class="col-md-12 mt-24">
+                                    <div class="my-order">
+                                        <h5>Saved Items</h5>
+                                        <div class="d-block">
+
+                                            <div class="saved-iteam">
+                                                <a class="save-card" href="#">
+                                                    <div class="img">
+                                                        <img src="./assets/imgs/saved-iteam1.jpg" alt="saved-iteam"
+                                                            class="img-fluid">
+                                                    </div>
+                                                    <div class="text-card">
+                                                        <h6>Carrier Veza Parts</h6>
+                                                        <span>3 Items</span>
+                                                    </div>
+                                                </a>
+                                                <a class="save-card" href="#">
+                                                    <div class="img">
+                                                        <img src="./assets/imgs/saved-iteam2.jpg" alt="saved-iteam"
+                                                            class="img-fluid">
+                                                    </div>
+                                                    <div class="text-card">
+                                                        <h6>Carrier Alpha
+                                                            Inverter Parts</h6>
+                                                        <span>3 Items</span>
+                                                    </div>
+                                                </a>
+                                                <a class="save-card" href="#">
+                                                    <div class="img">
+                                                        <img src="./assets/imgs/saved-iteam3.jpg" alt="saved-iteam"
+                                                            class="img-fluid">
+                                                    </div>
+                                                    <div class="text-card">
+                                                        <h6>Carrier Aura Parts</h6>
+                                                        <span>3 Items</span>
+                                                    </div>
+
+                                                </a>
+                                                <a class="save-card" href="#">
+                                                    <div class="img">
+                                                        <img src="./assets/imgs/saved-iteam4.jpg" alt="saved-iteam"
+                                                            class="img-fluid">
+                                                    </div>
+                                                    <div class="text-card">
+                                                        <h6>For Building A</h6>
+                                                        <span>3 Items</span>
+                                                    </div>
+                                                </a>
+                                                <a class="save-card" href="#">
+                                                    <div class="img">
+                                                        <img src="./assets/imgs/saved-iteam5.jpg" alt="saved-iteam"
+                                                            class="img-fluid">
+                                                    </div>
+                                                    <div class="text-card">
+
+                                                        <h6>For Company A</h6>
+                                                        <span>3 Items</span>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+
+                                            <div class="banner-btn text-center d-flex justify-content-center mt-5">
+                                                <a class="read-more-btn" href="#">View Saved Items
+                                                    <i class="fa-solid fa-arrow-right"></i></a>
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+
+                                        <!-- ======================================================== -->
+
+                                        <!-- whner there is no saved items then use this code-->
+
+                                        <!-- ======================================================== -->
+
+                                        <!-- this is the store credit subject for approval -->
+                                        <!-- 
+                                        <div class="d-flex justify-content-center align-items-center order-notfound">
+                                            <div class="text-center">
+                                                <h6 class="mb-4">No Saved Items List Found</h6>
+                                                <div class="div">
+                                                    <a href="" class="secondary_btn">Create a List <i
+                                                            class="fa-light fa-plus"></i></a>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                        <!-- ======================================================== -->
                                     </div>
                                 </div>
                             </div>
@@ -421,148 +635,125 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!--footer section  -->
-        <footer>
-            <div class="top-footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="footer-logo">
-                                <a href="index.html">
-                                    <img
-                                        src="./assets/imgs/logo.png"
-                                        alt="footer logo"
-                                    />
-                                </a>
-                            </div>
+    <!--footer section  -->
+    <footer>
+        <div class="top-footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-logo">
+                            <a href="index.html">
+                                <img src="./assets/imgs/logo.png" alt="footer logo" />
+                            </a>
                         </div>
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                            <div class="row mobile-menu">
-                                <div
-                                    class="col-6 col-xl-4 col-lg-4 col-md-6 col-sm-12 order-4 order-lg-0"
-                                >
-                                    <h5>Operating Hours</h5>
-                                    <ul>
-                                        <li>
-                                            <span class="text-uppercase"
-                                                >Voice</span
-                                            >
-                                            <div
-                                                class="d-flex gap-3 footer-hrs"
-                                            >
-                                                <p>Mon - Sat</p>
-                                                <p>
-                                                    <i
-                                                        class="fa-sharp fa-thin fa-dash"
-                                                    ></i>
-                                                </p>
-                                                <p>8AM - 7PM</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <span class="text-uppercase"
-                                                >non voice</span
-                                            >
-                                            <div
-                                                class="d-flex gap-3 footer-hrs"
-                                            >
-                                                <p>Mon - Sun</p>
-                                                <p>
-                                                    <i
-                                                        class="fa-sharp fa-thin fa-dash"
-                                                    ></i>
-                                                </p>
-                                                <p>7AM - 12MN</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="row mobile-menu">
+                            <div class="col-6 col-xl-4 col-lg-4 col-md-6 col-sm-12 order-4 order-lg-0">
+                                <h5>Operating Hours</h5>
+                                <ul>
+                                    <li>
+                                        <span class="text-uppercase">Voice</span>
+                                        <div class="d-flex gap-3 footer-hrs">
+                                            <p>Mon - Sat</p>
+                                            <p>
+                                                <i class="fa-sharp fa-thin fa-dash"></i>
+                                            </p>
+                                            <p>8AM - 7PM</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="text-uppercase">non voice</span>
+                                        <div class="d-flex gap-3 footer-hrs">
+                                            <p>Mon - Sun</p>
+                                            <p>
+                                                <i class="fa-sharp fa-thin fa-dash"></i>
+                                            </p>
+                                            <p>7AM - 12MN</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
 
-                                <div
-                                    class="col-6 col-xl-2 col-lg-3 col-md-6 col-sm-12"
-                                >
-                                    <h5>Products</h5>
-                                    <ul>
-                                        <li>
-                                            <a href="#">Install Materials</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"
-                                                >Factory Approved Parts</a
-                                            >
-                                        </li>
-                                        <li><a href="#">Universal</a></li>
-                                        <li><a href="#">Compressors</a></li>
-                                        <li>
-                                            <a href="#">Tools & Equipment</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                            <div class="col-6 col-xl-2 col-lg-3 col-md-6 col-sm-12">
+                                <h5>Products</h5>
+                                <ul>
+                                    <li>
+                                        <a href="#">Install Materials</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Factory Approved Parts</a>
+                                    </li>
+                                    <li><a href="#">Universal</a></li>
+                                    <li><a href="#">Compressors</a></li>
+                                    <li>
+                                        <a href="#">Tools & Equipment</a>
+                                    </li>
+                                </ul>
+                            </div>
 
-                                <div
-                                    class="col-6 col-xl-2 col-lg-2 col-md-6 col-6"
-                                >
-                                    <h5>Quick Links</h5>
-                                    <ul>
-                                        <li><a href="#">About Totaline</a></li>
-                                        <li><a href="#">Resources</a></li>
-                                        <li><a href="#">News</a></li>
-                                        <li><a href="#">FAQs</a></li>
-                                        <li><a href="#">Contact</a></li>
-                                    </ul>
-                                </div>
+                            <div class="col-6 col-xl-2 col-lg-2 col-md-6 col-6">
+                                <h5>Quick Links</h5>
+                                <ul>
+                                    <li><a href="#">About Totaline</a></li>
+                                    <li><a href="#">Resources</a></li>
+                                    <li><a href="#">News</a></li>
+                                    <li><a href="#">FAQs</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
 
-                                <div
-                                    class="col-6 col-xl-3 col-lg-3 col-md-6 col-6"
-                                >
-                                    <h5>Store Locations</h5>
-                                    <ul>
-                                        <li><a href="#">Alabang</a></li>
-                                        <li><a href="#">CDO</a></li>
-                                        <li><a href="#">Cebu</a></li>
-                                        <li><a href="#">Dagupan</a></li>
-                                        <li><a href="#">Davao</a></li>
-                                        <li><a href="#">Iloilo</a></li>
-                                        <li><a href="#">Pampanga</a></li>
-                                        <li><a href="#">Quezon City</a></li>
-                                    </ul>
-                                </div>
+                            <div class="col-6 col-xl-3 col-lg-3 col-md-6 col-6">
+                                <h5>Store Locations</h5>
+                                <ul>
+                                    <li><a href="#">Alabang</a></li>
+                                    <li><a href="#">CDO</a></li>
+                                    <li><a href="#">Cebu</a></li>
+                                    <li><a href="#">Dagupan</a></li>
+                                    <li><a href="#">Davao</a></li>
+                                    <li><a href="#">Iloilo</a></li>
+                                    <li><a href="#">Pampanga</a></li>
+                                    <li><a href="#">Quezon City</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="bottom-footer">
-                <div class="container">
-                    <div class="row justify-content-between">
-                        <div class="col-md-6">
-                            <p class="mb-0">
-                                © Totaline Systems. All rights Reserved.
-                            </p>
-                        </div>
-                        <div class="col-md-6">
-                            <ul class="nav gap-5 justify-content-end">
-                                <li><a href="#">Terms & Conditions</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                            </ul>
-                        </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-md-6">
+                        <p class="mb-0">
+                            © Totaline Systems. All rights Reserved.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="nav gap-5 justify-content-end">
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </footer>
-    </body>
+        </div>
+    </footer>
+</body>
 
-    <!-- jQuery  -->
-    <script src="./assets/js/jQuery/jQuery.min.js"></script>
+<!-- jQuery  -->
+<script src="./assets/js/jQuery/jQuery.min.js"></script>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- custom js  -->
-    <script src="./assets/js/custom-js/custom.js"></script>
+<!-- custom js  -->
+<script src="./assets/js/custom-js/custom.js"></script>
 
-    <!-- bootstrap js  -->
-    <script src="./assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+<!-- bootstrap js  -->
+<script src="./assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+
 </html>
