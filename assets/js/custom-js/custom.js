@@ -2,8 +2,9 @@ $(document).ready(function () {
     // header toggle menu js
     $(".mega-menu-area").hide();
 
-    $(".dropdown-toggle").click(function () {
-        $(".mega-menu-area").slideToggle("slow");
+    $(".dropdown-toggle").click(function (event) {
+        var $dropdownMenu = $(this).next(".mega-menu-area");
+        $dropdownMenu.slideToggle("slow"); // Toggle current dropdown
     });
 
     $(".navbar-toggler").click(function () {
@@ -156,3 +157,10 @@ var myMagicLine = new magicLine(document.querySelectorAll(".navbar-nav"), {
     },
 });
 myMagicLine.init();
+
+
+// slider for dashboard
+document.getElementById('sidebarToggleBtn').addEventListener('click', function () {
+    var sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('open');
+});

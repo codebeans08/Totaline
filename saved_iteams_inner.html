@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Orders | Totaline</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/custom-css/custom.css" />
+
+    <!-- fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+
+    <!-- Instrument Sans -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet" />
+
+    <!-- fontawesome pro  -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css" />
+
+    <!-- swiper slider  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- header start  -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/imgs/logo.png" alt="" width="150" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <div class="menu_btn gap-5 d-flex d-lg-none align-items-center py-5">
+                        <div class="btn_links d-flex gap-2">
+                            <a href="/">Cart
+                                <i class="fa-regular fa-cart-shopping"></i>
+                            </a>
+                        </div>
+
+                        <div class="btn_links d-flex gap-2">
+                            <a href="/">login
+                                <i class="fa-light fa-circle-user"></i></a>
+                        </div>
+                    </div>
+                    <ul class="navbar-nav gap-5">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">
+                                Products
+                            </a>
+                            <div class="mega-menu-area">
+                                <div class="mega-menu">
+                                    <div class="container">
+                                        <div class="row menu_row">
+                                            <div class="col-5">
+                                                <h3 class="h2 text_primary">
+                                                    Products
+                                                </h3>
+                                                <p>
+                                                    Learn from our knowledge
+                                                    hub and learn about the
+                                                    latest updates on
+                                                    Totaline.
+                                                </p>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Another
+                                                            action</a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Something else
+                                                            here</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Totaline</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">
+                                Resources & News
+                            </a>
+                            <div class="mega-menu-area">
+                                <div class="mega-menu">
+                                    <div class="container">
+                                        <div class="row menu_row">
+                                            <div class="col-5">
+                                                <h3 class="h2 text_primary">
+                                                    Resources & News
+                                                </h3>
+                                                <p>
+                                                    Learn from our knowledge
+                                                    hub and learn about the
+                                                    latest updates on
+                                                    Totaline.
+                                                </p>
+                                            </div>
+
+                                            <div class="col-auto">
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Another
+                                                            action</a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Something else
+                                                            here</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="menu_btn gap-5 d-none d-lg-flex align-items-center">
+                    <div class="btn_links d-flex gap-2">
+                        <a href="/">Cart
+                            <i class="fa-regular fa-cart-shopping"></i>
+                        </a>
+                    </div>
+
+                    <div class="btn_links d-flex gap-2">
+                        <a href="/">login <i class="fa-light fa-circle-user"></i></a>
+                    </div>
+                    <div class="btn_links d-flex gap-2 search_header">
+                        <a href="/">
+                            <i class="fa-light fa-magnifying-glass"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Dashboard start -->
+
+    <section class="dashboard">
+        <div class="container-fluid">
+            <div class="main_content">
+                <div class="sidebar-wrapper sidebar-w">
+                    <div class="sidebar">
+                        <div class="offcanvas-md offcanvas-end" tabindex="-1" id="sidebarMenu"
+                            aria-labelledby="sidebarMenuLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="sidebarMenuLabel">
+                                    Company name
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    data-bs-target="#sidebarMenu" aria-label="Close"></button>
+                            </div>
+
+                            <div class="offcanvas-body d-md-flex flex-column overflow-y-auto">
+                                <div class="user-name">
+                                    <p>Michael Scott</p>
+                                </div>
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a href="dashboard.html"><i class="fa-light fa-circle-user"></i>
+                                            Dashboard</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="orders.html">
+                                            <i class="fa-regular fa-cart-shopping"></i>
+                                            My Orders</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="active" href="saved_iteams.html">
+                                            <i class="fa-light fa-heart"></i>
+                                            Saved Items</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="#">
+                                            <i class="fa-light fa-user"></i>
+                                            Account Details</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="#">
+                                            <i class="fa-solid fa-pipe">
+                                                **</i>
+
+                                            Change Password
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page-body">
+                    <div class="home-dashboard">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="back-btn mb-24">
+                                        <a href="#" class="read-more-btn" onclick="history.back(); return false;">
+                                            <i class="fa-solid fa-arrow-left"></i> Back
+                                        </a>
+                                    </div>
+                                    <div class="welcome-back d-flex justify-content-between">
+                                        <h3 class="mb-0">Carrier Veza Parts</h3>
+                                        <div class="dropdown drop-btn">
+                                            <button class="dropdown-toggle " type="button" id="dropdownMenuButton3"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="fa-regular fa-ellipsis-vertical text_primary"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                                                <li class="m-0"><a href="#" data-bs-toggle="modal"
+                                                        data-bs-target="#deleteModal">Delete List</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- part list -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="part-list">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-5">
+                                                <ul class="d-flex list-unstyled">
+                                                    <li>
+                                                        <img class="img-fluid" src="./assets/imgs/inner.png"
+                                                            alt="Part Image">
+                                                    </li>
+                                                    <li>
+                                                        <span>Factory Approved parts</span>
+                                                        <h6>Bracket: Remote Ctrl 12122000027144</h6>
+                                                        <small>SKU</small>
+                                                        <h6>4000008949</h6>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div class="stock d-flex justify-content-between align-items-center">
+                                                    <div class="stock-status">
+                                                        <small class="bg-success text-white d-inline">in stock</small>
+                                                    </div>
+                                                    <div class="price">
+                                                        <small>Unit SRP</small>
+                                                        <h6>37.00</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 d-flex gap-5">
+                                                <div class="div">
+                                                    <button class="btn btn_primary  w-100">View Product <i
+                                                            class="fa-light fa-magnifying-glass"></i></button>
+                                                    <button class="secondary_btn w-100 mt-3 d-block">Add to Cart <i
+                                                            class="fa-regular fa-cart-shopping"></i></button>
+                                                </div>
+                                                <div>
+                                                    <button data-bs-toggle="modal" data-bs-target="#deleteproduct"
+                                                        class="remove"><i
+                                                            class="fa-sharp fa-light fa-trash-can text_primary"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="part-list">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-5">
+                                                <ul class="d-flex list-unstyled">
+                                                    <li>
+                                                        <img class="img-fluid" src="./assets/imgs/AR108KC-TF5-522.png"
+                                                            alt="Part Image">
+                                                    </li>
+                                                    <li>
+                                                        <span>Factory Approved parts</span>
+                                                        <h6>Compr: AR108KC-TF5-522</h6>
+                                                        <small>SKU</small>
+                                                        <h6>4000008949</h6>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div class="stock d-flex justify-content-between align-items-center">
+                                                    <div class="stock-status">
+                                                        <small class="bg-success text-white d-inline">in stock</small>
+                                                    </div>
+                                                    <div class="price">
+                                                        <small>Unit SRP</small>
+                                                        <h6>₱ 121,354.00</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 d-flex gap-5">
+                                                <div class="div">
+                                                    <button class="btn btn_primary  w-100">View Product <i
+                                                            class="fa-light fa-magnifying-glass"></i></button>
+                                                    <button class="secondary_btn w-100 mt-3 d-block">Add to Cart <i
+                                                            class="fa-regular fa-cart-shopping"></i></button>
+                                                </div>
+                                                <div>
+                                                    <button data-bs-toggle="modal" data-bs-target="#deleteproduct"
+                                                        class="remove"><i
+                                                            class="fa-sharp fa-light fa-trash-can text_primary"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="part-list">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-5">
+                                                <ul class="d-flex list-unstyled">
+                                                    <li>
+                                                        <img class="img-fluid" src="./assets/imgs/saved-iteam2.jpg"
+                                                            alt="Part Image">
+                                                    </li>
+                                                    <li>
+                                                        <span>Factory Approved parts</span>
+                                                        <h6>Compr: BR108KC-TF5-522</h6>
+                                                        <small>SKU</small>
+                                                        <h6>4000008949</h6>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div class="stock d-flex justify-content-between align-items-center">
+                                                    <div class="stock-status">
+                                                        <small class="bg-success text-white d-inline">in stock</small>
+                                                    </div>
+                                                    <div class="price">
+                                                        <small>Unit SRP</small>
+                                                        <h6>₱ 121,354.00</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 d-flex gap-5">
+                                                <div class="div">
+                                                    <button class="btn btn_primary  w-100">View Product <i
+                                                            class="fa-light fa-magnifying-glass"></i></button>
+                                                    <button class="secondary_btn w-100 mt-3 d-block">Add to Cart <i
+                                                            class="fa-regular fa-cart-shopping"></i></button>
+                                                </div>
+                                                <div>
+                                                    <button data-bs-toggle="modal" data-bs-target="#deleteproduct"
+                                                        class="remove"><i
+                                                            class="fa-sharp fa-light fa-trash-can text_primary"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="part-list">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-5">
+                                                <ul class="d-flex list-unstyled">
+                                                    <li>
+                                                        <img class="img-fluid" src="./assets/imgs/saved-iteam1.jpg"
+                                                            alt="Part Image">
+                                                    </li>
+                                                    <li>
+                                                        <span>Factory Approved parts</span>
+                                                        <h6>Compr: BR108KC-TF5-522</h6>
+                                                        <small>SKU</small>
+                                                        <h6>4000008949</h6>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div class="stock d-flex justify-content-between align-items-center">
+                                                    <div class="stock-status">
+                                                        <small class="bg-success text-white d-inline">in stock</small>
+                                                    </div>
+                                                    <div class="price">
+                                                        <small>Unit SRP</small>
+                                                        <h6>₱ 121,354.00</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 d-flex gap-5">
+                                                <div class="div">
+                                                    <button class="btn btn_primary  w-100">View Product <i
+                                                            class="fa-light fa-magnifying-glass"></i></button>
+                                                    <button class="secondary_btn w-100 mt-3 d-block">Add to Cart <i
+                                                            class="fa-regular fa-cart-shopping"></i></button>
+                                                </div>
+                                                <div>
+                                                    <button data-bs-toggle="modal" data-bs-target="#deleteproduct"
+                                                        class="remove"><i
+                                                            class="fa-sharp fa-light fa-trash-can text_primary"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="part-list">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-5">
+                                                <ul class="d-flex list-unstyled">
+                                                    <li>
+                                                        <img class="img-fluid" src="./assets/imgs/pink-s.png"
+                                                            alt="Part Image">
+                                                    </li>
+                                                    <li>
+                                                        <span>Factory Approved parts</span>
+                                                        <h6>Compr: BR108KC-TF5-522</h6>
+                                                        <small>SKU</small>
+                                                        <h6>4000008949</h6>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div class="stock d-flex justify-content-between align-items-center">
+                                                    <div class="stock-status">
+                                                        <small class="bg-success text-white d-inline">in stock</small>
+                                                    </div>
+                                                    <div class="price">
+                                                        <small>Unit SRP</small>
+                                                        <h6>₱ 121,354.00</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 d-flex gap-5">
+                                                <div class="div">
+                                                    <button class="btn btn_primary  w-100">View Product <i
+                                                            class="fa-light fa-magnifying-glass"></i></button>
+                                                    <button class="secondary_btn w-100 mt-3 d-block">Add to Cart <i
+                                                            class="fa-regular fa-cart-shopping"></i></button>
+                                                </div>
+                                                <div>
+                                                    <button data-bs-toggle="modal" data-bs-target="#deleteproduct"
+                                                        class="remove"><i
+                                                            class="fa-sharp fa-light fa-trash-can text_primary"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <!-- ======================================================== -->
+
+                            <!-- whner there is no saved items then use this code-->
+
+                            <!-- ======================================================== -->
+
+                            <!-- this is the no saved items subject for approval -->
+
+                            <!-- <div class="d-flex justify-content-center align-items-center order-notfound">
+                                <div class="text-center">
+                                    <h6 class="mb-4">No Saved Items List Found</h6>
+                                    <div class="div">
+                                        <a href="" class="secondary_btn" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">View our Products</a>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!-- ======================================================== -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- delete list modal box -->
+
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="deleteModalLabel">Delete Carrier Veza Parts</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-0">Are you sure you want to delete this wishlist?
+                        This action cannot be undone.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class=" btn btn_primary">Delete</button>
+                    <button type="button" class="secondary_btn" data-bs-dismiss="modal"
+                        aria-label="Close">Cancle</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- delete product modal box -->
+
+    <div class="modal fade" id="deleteproduct" tabindex="-1" aria-labelledby="deleteproductLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="deleteproductLabel">Delete Item</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-0">Are you sure you want to delete this item from the list? This action cannot be
+                        undone.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class=" btn btn_primary">Delete</button>
+                    <button type="button" class="secondary_btn" data-bs-dismiss="modal"
+                        aria-label="Close">Cancle</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer section  -->
+    <footer>
+        <div class="top-footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-logo">
+                            <a href="index.html">
+                                <img src="./assets/imgs/logo.png" alt="footer logo" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="row mobile-menu">
+                            <div class="col-6 col-xl-4 col-lg-4 col-md-6 col-sm-12 order-4 order-lg-0">
+                                <h5>Operating Hours</h5>
+                                <ul>
+                                    <li>
+                                        <span class="text-uppercase">Voice</span>
+                                        <div class="d-flex gap-3 footer-hrs">
+                                            <p>Mon - Sat</p>
+                                            <p>
+                                                <i class="fa-sharp fa-thin fa-dash"></i>
+                                            </p>
+                                            <p>8AM - 7PM</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="text-uppercase">non voice</span>
+                                        <div class="d-flex gap-3 footer-hrs">
+                                            <p>Mon - Sun</p>
+                                            <p>
+                                                <i class="fa-sharp fa-thin fa-dash"></i>
+                                            </p>
+                                            <p>7AM - 12MN</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-6 col-xl-2 col-lg-3 col-md-6 col-sm-12">
+                                <h5>Products</h5>
+                                <ul>
+                                    <li>
+                                        <a href="#">Install Materials</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Factory Approved Parts</a>
+                                    </li>
+                                    <li><a href="#">Universal</a></li>
+                                    <li><a href="#">Compressors</a></li>
+                                    <li>
+                                        <a href="#">Tools & Equipment</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-6 col-xl-2 col-lg-2 col-md-6 col-6">
+                                <h5>Quick Links</h5>
+                                <ul>
+                                    <li><a href="#">About Totaline</a></li>
+                                    <li><a href="#">Resources</a></li>
+                                    <li><a href="#">News</a></li>
+                                    <li><a href="#">FAQs</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-6 col-xl-3 col-lg-3 col-md-6 col-6">
+                                <h5>Store Locations</h5>
+                                <ul>
+                                    <li><a href="#">Alabang</a></li>
+                                    <li><a href="#">CDO</a></li>
+                                    <li><a href="#">Cebu</a></li>
+                                    <li><a href="#">Dagupan</a></li>
+                                    <li><a href="#">Davao</a></li>
+                                    <li><a href="#">Iloilo</a></li>
+                                    <li><a href="#">Pampanga</a></li>
+                                    <li><a href="#">Quezon City</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-md-6">
+                        <p class="mb-0">
+                            © Totaline Systems. All rights Reserved.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="nav gap-5 justify-content-end">
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<!-- jQuery  -->
+<script src="./assets/js/jQuery/jQuery.min.js"></script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- custom js  -->
+<script src="./assets/js/custom-js/custom.js"></script>
+
+<!-- bootstrap js  -->
+<script src="./assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        var html = '<div class="repate mt-24"><div class="form-groupd d-flex gap-3"><input type="text" placeholder="Carrier Veza Parts"><button type="button" class="remove"><i class="fa-regular fa-trash-can"></i></button></div></div>';
+
+        function checkInputFields() {
+            var inputCount = $('.reapiter-div .repate').length;
+            if (inputCount > 5) {
+                $('.modal-body').addClass('h-scroll');
+            } else {
+                $('.modal-body').removeClass('h-scroll');
+            }
+        }
+
+        $("#addProduct").click(function () {
+            $('.reapiter-div').append(html);
+            checkInputFields();
+        });
+
+        $(document).on('click', '.remove', function () {
+            $(this).closest('.repate').remove();
+            checkInputFields();
+        });
+    });
+</script>
+
+</html>
